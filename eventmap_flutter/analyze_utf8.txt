@@ -1,0 +1,85 @@
+﻿Resolving dependencies...
+Downloading packages...
+  font_awesome_flutter 10.12.0 (11.0.0 available)
+  hooks 1.0.1 (1.0.2 available)
+  meta 1.17.0 (1.18.1 available)
+  mgrs_dart 2.0.0 (3.0.0 available)
+  native_toolchain_c 0.17.4 (0.17.5 available)
+  proj4dart 2.1.0 (3.0.0 available)
+  sqflite_android 2.4.2+2 (2.4.2+3 available)
+  unicode 0.3.1 (1.1.9 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing eventmap_flutter...                                   
+
+  error - The method 'debugPrint' isn't defined for the type 'DatabaseHelper' - lib\repository\database_helper.dart:149:9 - undefined_method
+  error - The argument type 'Object?' can't be assigned to the parameter type 'String'.  - lib\repository\database_helper.dart:151:15 - argument_type_not_assignable
+  error - The argument type 'Object?' can't be assigned to the parameter type 'double'.  - lib\repository\database_helper.dart:152:28 - argument_type_not_assignable
+  error - The argument type 'Object?' can't be assigned to the parameter type 'double'.  - lib\repository\database_helper.dart:152:41 - argument_type_not_assignable
+  error - The argument type 'Object' can't be assigned to the parameter type 'String'.  - lib\repository\database_helper.dart:153:20 - argument_type_not_assignable
+  error - The argument type 'Object?' can't be assigned to the parameter type 'String'.  - lib\repository\database_helper.dart:154:37 - argument_type_not_assignable
+   info - Don't invoke 'print' in production code - lib\repository\db_web.dart:18:5 - avoid_print
+   info - Statements in an if should be enclosed in a block - lib\screens\map_screen.dart:89:51 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\screens\map_screen.dart:170:19 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\screens\map_screen.dart:171:12 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\screens\map_screen.dart:204:56 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\screens\map_screen.dart:205:28 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\map_screen.dart:255:154 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\map_screen.dart:282:62 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion - lib\utils\geojson_parser.dart:10:82 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\utils\geojson_parser.dart:55:18 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\utils\geojson_parser.dart:56:24 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\utils\map_optimization_engine.dart:43:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\utils\monitoring_bridge_client.dart:11:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\utils\monitoring_bridge_client.dart:13:7 - avoid_print
+   info - Use the null-aware marker '?' rather than a null check via an 'if' - lib\utils\monitoring_bridge_client.dart:21:7 - use_null_aware_elements
+   info - Don't invoke 'print' in production code - lib\utils\monitoring_bridge_client.dart:26:7 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\event_detail_sheet.dart:20:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\event_detail_sheet.dart:25:33 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\widgets\event_detail_sheet.dart:65:45 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\widgets\event_detail_sheet.dart:65:49 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\widgets\event_detail_sheet.dart:74:45 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\widgets\event_detail_sheet.dart:74:49 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\event_detail_sheet.dart:129:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\event_detail_sheet.dart:169:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\event_detail_sheet.dart:171:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\marker_item.dart:40:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\marker_item.dart:49:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\optimized_marker_layer.dart:43:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\optimized_marker_layer.dart:45:45 - deprecated_member_use
+   info - Statements in an if should be enclosed in a block - lib\widgets\optimized_marker_layer.dart:66:54 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\widgets\optimized_marker_layer.dart:67:59 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\widgets\optimized_marker_layer.dart:68:59 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\optimized_marker_layer.dart:78:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\optimized_marker_layer.dart:87:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\optimized_marker_layer.dart:103:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\optimized_marker_layer.dart:120:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:28:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:30:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:33:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:105:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:125:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:189:82 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:190:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:237:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:239:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:242:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:289:84 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:293:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:309:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:312:51 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\widgets\overlays.dart:329:9 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:336:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:379:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:379:81 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\widgets\overlays.dart:386:48 - deprecated_member_use
+
+flutter : 61 issues found. (ran in 11.3s)
+위치 줄:1 문자:1
++ flutter analyze > analyze_output.txt 2>&1; type analyze_output.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (61 issues found. (ran  
+   in 11.3s):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

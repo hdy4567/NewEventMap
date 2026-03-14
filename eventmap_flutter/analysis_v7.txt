@@ -1,0 +1,6 @@
+Analyzing eventmap_flutter...                                   
+
+warning - The declaration '_getIndexFile' isn't referenced - lib\utils\sync_service.dart:102:19 - unused_element
+   info - Don't invoke 'print' in production code - lib\utils\sync_service.dart:137:7 - avoid_print
+warning - Unused import: '../utils/sync_service.dart' - lib\widgets\overlays.dart:3:8 - unused_import
+

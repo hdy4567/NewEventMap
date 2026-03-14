@@ -1,0 +1,194 @@
+Launching lib\main.dart on Chrome in debug mode...
+Waiting for connection from debug service on Chrome...          
+lib/models/context_packet.dart:3:21: Error: Can't find '}' to match '{'.
+class ContextPacket {
+                    ^
+lib/utils/storage_index_manager.dart:4:8: Error: Dart library 'dart:foundation' is not available on this platform.
+import 'dart:foundation';
+       ^
+Context: The unavailable library 'dart:foundation' is imported through these packages:
+
+    web_entrypoint.dart => package:eventmap_flutter => dart:foundation
+
+Detailed import paths for (some of) the these imports:
+
+    web_entrypoint.dart => package:eventmap_flutter/main.dart => package:eventmap_flutter/screens/map_screen.dart => package:eventmap_flutter/utils/storage_index_manager.dart => dart:foundation
+
+lib/screens/map_screen.dart:35:8: Error: Type 'ContextPacket' not found.
+  List<ContextPacket> _allPackets = [];
+       ^^^^^^^^^^^^^
+lib/repository/db_web.dart:3:8: Error: Type 'Database' not found.
+Future<Database> openPlatformDatabase(String filePath, {required Future<void> Function(dynamic, int) onCreate}) async {
+       ^^^^^^^^
+lib/screens/map_screen.dart:35:8: Error: 'ContextPacket' isn't a type.
+  List<ContextPacket> _allPackets = [];
+       ^^^^^^^^^^^^^
+lib/screens/map_screen.dart:185:73: Error: The getter 'latLng' isn't defined for the type 'LayerPoint<EventItem>'.
+ - 'LayerPoint' is from 'package:supercluster/src/layer_element.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/src/layer_element.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'latLng'.
+          final pos = _mapController.camera.getOffsetFromOrigin(element.latLng);
+                                                                        ^^^^^^
+lib/screens/map_screen.dart:285:89: Error: The getter 'latLng' isn't defined for the type 'LayerPoint<EventItem>'.
+ - 'LayerPoint' is from 'package:supercluster/src/layer_element.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/src/layer_element.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'latLng'.
+                      final itemPos = _mapController.camera.getOffsetFromOrigin(element.latLng);
+                                                                                        ^^^^^^
+lib/screens/map_screen.dart:292:92: Error: The getter 'latLng' isn't defined for the type 'LayerCluster<EventItem>'.
+ - 'LayerCluster' is from 'package:supercluster/src/layer_element.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/src/layer_element.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'latLng'.
+                      final clusterPos = _mapController.camera.getOffsetFromOrigin(element.latLng);
+                                                                                          ^^^^^^
+lib/screens/map_screen.dart:295:53: Error: The getter 'latLng' isn't defined for the type 'LayerCluster<EventItem>'.
+ - 'LayerCluster' is from 'package:supercluster/src/layer_element.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/src/layer_element.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'latLng'.
+                        _mapController.move(element.latLng, _mapController.camera.zoom + 2);
+                                                    ^^^^^^
+lib/screens/map_screen.dart:321:17: Error: The method 'NonRotatedLayer' isn't defined for the type '_MapScreenState'.
+ - '_MapScreenState' is from 'package:eventmap_flutter/screens/map_screen.dart' ('lib/screens/map_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'NonRotatedLayer'.
+                NonRotatedLayer(
+                ^^^^^^^^^^^^^^^
+lib/screens/map_screen.dart:494:43: Error: 'ContextPacket' isn't a type.
+                child: FutureBuilder<List<ContextPacket>>(
+                                          ^^^^^^^^^^^^^
+lib/screens/map_screen.dart:504:34: Error: The getter 'tags' isn't defined for the type 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'tags'.
+                        return p.tags.any((t) => t.toLowerCase().contains(searchTag));
+                                 ^^^^
+lib/screens/map_screen.dart:506:33: Error: The getter 'textHeader' isn't defined for the type 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'textHeader'.
+                      return (p.textHeader ?? "").toLowerCase().contains(_searchQuery.toLowerCase());
+                                ^^^^^^^^^^
+lib/utils/geojson_parser.dart:58:5: Error: No named parameter with the name 'isFilled'.
+    isFilled: true,
+    ^^^^^^^^
+/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_map-8.2.2/lib/src/layer/polygon_layer/polygon.dart:131:3: Context: Found this candidate, but the arguments don't match.
+  Polygon({
+  ^^^^^^^
+lib/utils/map_optimization_engine.dart:21:22: Error: The method 'compute' isn't defined for the type 'MapOptimizationEngine'.
+ - 'MapOptimizationEngine' is from 'package:eventmap_flutter/utils/map_optimization_engine.dart' ('lib/utils/map_optimization_engine.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'compute'.
+      _index = await compute(_buildSupercluster, events);
+                     ^^^^^^^
+lib/utils/map_optimization_engine.dart:30:19: Error: The class 'Supercluster' is abstract and can't be instantiated.
+    final index = Supercluster<EventItem>(
+                  ^^^^^^^^^^^^
+lib/utils/map_optimization_engine.dart:51:19: Error: The class 'Supercluster' is abstract and can't be instantiated.
+    final index = Supercluster<EventItem>(
+                  ^^^^^^^^^^^^
+lib/utils/map_optimization_engine.dart:74:20: Error: The method 'getClustersAndPoints' isn't defined for the type 'Supercluster<EventItem>'.
+ - 'Supercluster' is from 'package:supercluster/supercluster.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/supercluster.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'getClustersAndPoints'.
+    return _index!.getClustersAndPoints(minLng, minLat, maxLng, maxLat, zoom);
+                   ^^^^^^^^^^^^^^^^^^^^
+lib/widgets/optimized_marker_layer.dart:23:54: Error: The getter 'latLng' isn't defined for the type 'LayerElement<EventItem>'.
+ - 'LayerElement' is from 'package:supercluster/src/layer_element.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/src/layer_element.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'latLng'.
+      final pos = camera.getOffsetFromOrigin(element.latLng);
+                                                     ^^^^^^
+lib/widgets/optimized_marker_layer.dart:71:23: Error: The getter 'childCount' isn't defined for the type 'LayerCluster<EventItem>'.
+ - 'LayerCluster' is from 'package:supercluster/src/layer_element.dart' ('/C:/Users/%ED%95%A8%EB%8F%99%EC%9C%A4/AppData/Local/Pub/Cache/hosted/pub.dev/supercluster-3.2.0/lib/src/layer_element.dart').
+ - 'EventItem' is from 'package:eventmap_flutter/models/event_item.dart' ('lib/models/event_item.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'childCount'.
+        text: cluster.childCount.toString(),
+                      ^^^^^^^^^^
+lib/utils/storage_index_manager.dart:54:27: Error: Method not found: 'compute'.
+    final updated = await compute(_processDroppedFileTask, {
+                          ^^^^^^^
+lib/utils/storage_index_manager.dart:103:46: Error: The getter 'tags' isn't defined for the type 'ContextPacket'.
+ - 'ContextPacket' is from 'package:eventmap_flutter/models/context_packet.dart' ('lib/models/context_packet.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'tags'.
+        target = packets.firstWhere((p) => p.tags.any((t) => fileTags.contains(t)));
+                                             ^^^^
+lib/utils/storage_index_manager.dart:156:24: Error: The getter 'tags' isn't defined for the type 'ContextPacket'.
+ - 'ContextPacket' is from 'package:eventmap_flutter/models/context_packet.dart' ('lib/models/context_packet.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'tags'.
+      allTags.addAll(p.tags);
+                       ^^^^
+lib/models/context_packet.dart:48:16: Error: Expected ';' after this.
+  List<String> get tags {
+               ^^^
+lib/models/context_packet.dart:48:20: Error: Expected ';' after this.
+  List<String> get tags {
+                   ^^^^
+lib/models/context_packet.dart:48:20: Error: Undefined name 'tags'.
+  List<String> get tags {
+                   ^^^^
+lib/models/context_packet.dart:49:9: Error: Undefined name 'textHeader'.
+    if (textHeader == null) return [];
+        ^^^^^^^^^^
+lib/models/context_packet.dart:51:21: Error: Undefined name 'textHeader'.
+        .allMatches(textHeader!)
+                    ^^^^^^^^^^
+lib/models/context_packet.dart:49:36: Error: A value of type 'List<dynamic>' can't be returned from a function with return type 'ContextPacket'.
+ - 'List' is from 'dart:core'.
+ - 'ContextPacket' is from 'package:eventmap_flutter/models/context_packet.dart' ('lib/models/context_packet.dart').
+    if (textHeader == null) return [];
+                                   ^
+lib/models/context_packet.dart:53:10: Error: A value of type 'List<String>' can't be returned from a function with return type 'ContextPacket'.
+ - 'List' is from 'dart:core'.
+ - 'ContextPacket' is from 'package:eventmap_flutter/models/context_packet.dart' ('lib/models/context_packet.dart').
+        .toList();
+         ^
+lib/repository/db_web.dart:7:14: Error: Method not found: 'OpenConfiguration'.
+    options: OpenConfiguration(
+             ^^^^^^^^^^^^^^^^^
+Unhandled exception:
+Unsupported operation: Unsupported invalid type InvalidType(<invalid>) (InvalidType). Encountered while compiling file:///C:/YOON/CSrepos/NewEventMap/eventmap_flutter/lib/screens/map_screen.dart, which contains the type: InterfaceType(List<<invalid>>).
+#0      LibraryCompiler._typeCompilationError (package:dev_compiler/src/kernel/compiler_new.dart:4480)
+#1      LibraryCompiler._emitType (package:dev_compiler/src/kernel/compiler_new.dart:4445)
+#2      LibraryCompiler._emitCast (package:dev_compiler/src/kernel/compiler_new.dart:8676)
+#3      LibraryCompiler.visitInstanceGet (package:dev_compiler/src/kernel/compiler_new.dart:6214)
+#4      InstanceGet.accept (package:kernel/src/ast/expressions.dart:586)
+#5      LibraryCompiler._visitExpression (package:dev_compiler/src/kernel/compiler_new.dart:5147)
+#6      LibraryCompiler._emitHotReloadChecksConditional (package:dev_compiler/src/kernel/compiler_new.dart:7759)
+#7      LibraryCompiler.visitInstanceGet (package:dev_compiler/src/kernel/compiler_new.dart:6207)
+#8      InstanceGet.accept (package:kernel/src/ast/expressions.dart:586)
+#9      LibraryCompiler._visitExpression (package:dev_compiler/src/kernel/compiler_new.dart:5147)
+#10     LibraryCompiler.visitForInStatement.<anonymous closure> (package:dev_compiler/src/kernel/compiler_new.dart:5645)
+#11     LibraryCompiler._translateLoop (package:dev_compiler/src/kernel/compiler_new.dart:5459)
+#12     LibraryCompiler.visitForInStatement (package:dev_compiler/src/kernel/compiler_new.dart:5641)
+#13     ForInStatement.accept (package:kernel/src/ast/statements.dart:656)
+#14     LibraryCompiler._visitStatement (package:dev_compiler/src/kernel/compiler_new.dart:5044)
+#15     MappedIterable.elementAt (dart:_internal/iterable.dart:402)
+#16     ListIterator.moveNext (dart:_internal/iterable.dart:371)
+#17     new _GrowableList._ofEfficientLengthIterable (dart:core-patch/growable_array.dart:194)
+#18     new _GrowableList.of (dart:core-patch/growable_array.dart:154)
+#19     new List.of (dart:core-patch/array_patch.dart:39)
+#20     SetBase.toList (dart:collection/set.dart:119)
+#21     LibraryCompiler.visitBlock (package:dev_compiler/src/kernel/compiler_new.dart:5257)
+#22     Block.accept (package:kernel/src/ast/statements.dart:106)
+#23     LibraryCompiler._visitStatement (package:dev_compiler/src/kernel/compiler_new.dart:5044)
+#24     LibraryCompiler._emitFunctionScopedBody (package:dev_compiler/src/kernel/compiler_new.dart:5081)
+#25     LibraryCompiler._emitFunction.<anonymous closure> (package:dev_compiler/src/kernel/compiler_new.dart:4667)
+#26     LibraryCompiler._withLetScope (package:dev_compiler/src/kernel/compiler_new.dart:3661)
+#27     LibraryCompiler._withCurrentFunction (package:dev_compiler/src/kernel/compiler_new.dart:4841)
+#28     LibraryCompiler._emitFunction (package:dev_compiler/src/kernel/compiler_new.dart:4659)
+#29     LibraryCompiler._emitMethodDeclaration.<anonymous closure> (package:dev_compiler/src/kernel/compiler_new.dart:2941)
+#30     LibraryCompiler._withMethodDeclarationContext (package:dev_compiler/src/kernel/compiler_new.dart:4866)
+#31     LibraryCompiler._emitMethodDeclaration (package:dev_compiler/src/kernel/compiler_new.dart:2939)
+#32     LibraryCompiler._emitClassProperties (package:dev_compiler/src/kernel/compiler_new.dart:2880)
+#33     LibraryCompiler._emitClassDeclaration (package:dev_compiler/src/kernel/compiler_new.dart:1488)
+#34     LibraryCompiler._emitClass (package:dev_compiler/src/kernel/compiler_new.dart:1426)
+#35     List.forEach (dart:core-patch/growable_array.dart:428)
+#36     LibraryCompiler._emitLibrary (package:dev_compiler/src/kernel/compiler_new.dart:1348)
+#37     LibraryCompiler.emitLibrary (package:dev_compiler/src/kernel/compiler_new.dart:962)
+#38     LibraryBundleCompiler.emitModule (package:dev_compiler/src/kernel/compiler_new.dart:165)
+#39     IncrementalJavaScriptBundler.compile (package:frontend_server/src/javascript_bundle.dart:324)
+#40     FrontendCompiler.writeJavaScriptBundle (package:frontend_server/frontend_server.dart:922)
+<asynchronous suspension>
+#41     FrontendCompiler.compile (package:frontend_server/frontend_server.dart:728)
+<asynchronous suspension>
+#42     listenAndCompile.<anonymous closure> (package:frontend_server/frontend_server.dart:1449)
+<asynchronous suspension>
+The Dart compiler exited unexpectedly.
+Waiting for connection from debug service on Chrome...             15.7s
+Failed to compile application.

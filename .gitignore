@@ -1,0 +1,47 @@
+# 🔐 Sensitive Data
+.env
+*.env
+auth.js.bak
+state.js.bak
+
+# 📦 Dependencies
+node_modules/
+jspm_packages/
+
+# 🛠️ Build Artifacts
+dist/
+build/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# 🤖 AI Models (Large Files)
+models/
+*.gguf
+*.bin
+
+# 📝 Logs & Temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.stylelintcache
+build_log.txt
+error.txt
+error_ascii.txt
+
+# 💻 Editor-specific files
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 🍎 OS-specific files
+.DS_Store
+Thumbs.db

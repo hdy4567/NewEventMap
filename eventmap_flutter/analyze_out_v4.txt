@@ -1,0 +1,42 @@
+ERROR|COMPILE_TIME_ERROR|UNDEFINED_FUNCTION|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\repository\\db_web.dart|9|14|17|The function 'OpenConfiguration' isn't defined.
+WARNING|STATIC_WARNING|UNUSED_IMPORT|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|15|8|24|Unused import: 'package:path/path.dart'.
+WARNING|STATIC_WARNING|UNNECESSARY_NULL_COMPARISON|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|154|31|7|The operand can't be 'null', so the condition is always 'false'.
+WARNING|STATIC_WARNING|DEAD_CODE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|154|40|7|Dead code.
+INFO|LINT|USE_BUILD_CONTEXT_SYNCHRONOUSLY|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|287|26|7|Don't use 'BuildContext's across async gaps.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|374|40|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|388|52|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|USE_BUILD_CONTEXT_SYNCHRONOUSLY|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|492|34|7|Don't use 'BuildContext's across async gaps.
+INFO|LINT|USE_BUILD_CONTEXT_SYNCHRONOUSLY|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|496|25|7|Don't use 'BuildContext's across async gaps.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\screens\\map_screen.dart|580|70|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\geojson_parser.dart|10|82|5|'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\geojson_parser.dart|55|18|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\geojson_parser.dart|56|24|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|AVOID_PRINT|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\map_optimization_engine.dart|17|7|5|Don't invoke 'print' in production code.
+INFO|LINT|AVOID_PRINT|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\monitoring_bridge_client.dart|11|7|5|Don't invoke 'print' in production code.
+INFO|LINT|AVOID_PRINT|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\monitoring_bridge_client.dart|13|7|5|Don't invoke 'print' in production code.
+INFO|LINT|USE_NULL_AWARE_ELEMENTS|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\monitoring_bridge_client.dart|21|7|2|Use the null-aware marker '?' rather than a null check via an 'if'.
+INFO|LINT|AVOID_PRINT|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\monitoring_bridge_client.dart|26|7|5|Don't invoke 'print' in production code.
+INFO|LINT|PREFER_CONDITIONAL_ASSIGNMENT|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\utils\\storage_index_manager.dart|85|5|251|The 'if' statement could be replaced by a null-aware assignment.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|20|40|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|25|33|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|65|45|2|Unnecessary use of multiple underscores.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|65|49|3|Unnecessary use of multiple underscores.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|74|45|2|Unnecessary use of multiple underscores.
+INFO|LINT|UNNECESSARY_UNDERSCORES|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|74|49|3|Unnecessary use of multiple underscores.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|129|54|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|169|22|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\event_detail_sheet.dart|171|41|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\marker_item.dart|40|35|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\marker_item.dart|49|28|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\optimized_marker_layer.dart|42|33|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\optimized_marker_layer.dart|66|31|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|27|40|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|29|53|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|32|33|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|93|29|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|113|56|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|177|64|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|178|47|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|224|42|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|226|55|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.
+INFO|HINT|DEPRECATED_MEMBER_USE|C:\\YOON\\CSrepos\\NewEventMap\\eventmap_flutter\\lib\\widgets\\overlays.dart|229|35|11|'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss.

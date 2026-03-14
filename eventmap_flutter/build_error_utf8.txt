@@ -1,0 +1,103 @@
+﻿Launching lib\main.dart on Chrome in debug mode...
+Waiting for connection from debug service on Chrome...          
+flutter : lib/screens/map_scr
+een.dart:270:31: Error: The g
+etter 'localPosition' isn't d
+efined for the type 'TapPosit
+ion'.
+위치 줄:1 문자:1
++ flutter run -d chrome --web
+-hostname localhost --web-por
+t 3000 > buil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (lib/scr  
+  eens/map... 'TapPosition   
+ '.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+ - 'TapPosition' is from 'pac
+kage:flutter_map/src/gestures
+/positioned_tap_detector_2.da
+rt' ('/C:/Users/%ED%95%A8%EB%
+8F%99%EC%9C%A4/AppData/Local/
+Pub/Cache/hosted/pub.dev/flut
+ter_map-8.2.2/lib/src/gesture
+s/positioned_tap_detector_2.d
+art').
+Try correcting the name to th
+e name of an existing getter,
+ or defining a getter or fiel
+d named 'localPosition'.
+                      if ((tp
+.localPosition - pos).distanc
+e < 28) {
+                             
+ ^^^^^^^^^^^^^
+lib/widgets/overlays.dart:131
+:74: Error: Member not found:
+ 'black'.
+      style: const TextStyle(
+color: Colors.white, fontWeig
+ht: FontWeight.black, fontSiz
+e: 13)
+                             
+                             
+               ^^^^^
+lib/widgets/optimized_marker_
+layer.dart:23:54: Error: The 
+getter 'latLng' isn't defined
+ for the type 'LayerElement<E
+ventItem>'.
+ - 'LayerElement' is from 'pa
+ckage:supercluster/src/layer_
+element.dart' ('/C:/Users/%ED
+%95%A8%EB%8F%99%EC%9C%A4/AppD
+ata/Local/Pub/Cache/hosted/pu
+b.dev/supercluster-3.2.0/lib/
+src/layer_element.dart').
+ - 'EventItem' is from 'packa
+ge:eventmap_flutter/models/ev
+ent_item.dart' ('lib/models/e
+vent_item.dart').
+Try correcting the name to th
+e name of an existing getter,
+ or defining a getter or fiel
+d named 'latLng'.
+      final pos = camera.getO
+ffsetFromOrigin(element.latLn
+g);
+                             
+                        ^^^^^
+^
+lib/widgets/optimized_marker_
+layer.dart:55:27: Error: The 
+getter 'pointCount' isn't def
+ined for the type 'LayerClust
+er<EventItem>'.
+ - 'LayerCluster' is from 'pa
+ckage:supercluster/src/layer_
+element.dart' ('/C:/Users/%ED
+%95%A8%EB%8F%99%EC%9C%A4/AppD
+ata/Local/Pub/Cache/hosted/pu
+b.dev/supercluster-3.2.0/lib/
+src/layer_element.dart').
+ - 'EventItem' is from 'packa
+ge:eventmap_flutter/models/ev
+ent_item.dart' ('lib/models/e
+vent_item.dart').
+Try correcting the name to th
+e name of an existing getter,
+ or defining a getter or fiel
+d named 'pointCount'.
+    final count = cluster.poi
+ntCount;
+                          ^^^
+^^^^^^^
+Waiting for connection from debug service on Chrome...             21.0s
+Failed to compile application
+.
