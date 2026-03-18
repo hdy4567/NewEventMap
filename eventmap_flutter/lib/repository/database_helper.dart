@@ -219,7 +219,44 @@ class DatabaseHelper {
     }
   }
 
-  /// Integrated Drop Logic: Merges close packets or creates new ones
+  // --- Capacity Management (On-Device v1.0) ---
+
+  Future<void> pruneDataPerRegion({int limit = 1000}) async {
+    final db = await instance.database;
+    debugPrint("🚀 [ON-DEVICE PRUNE] Enforcing $limit limit per region...");
+
+    // 1. Get counts per region
+    final List<Map<String, dynamic>> regions = await db.rawQuery(
+        'SELECT region, COUNT(*) as count FROM events GROUP BY region');
+
+    int totalPruned = 0;
+    for (var r in regions) {
+      final String regionName = r['region'] ?? "Global";
+      final int count = r['count'] as int;
+
+      if (count > limit) {
+        final int toRemove = count - limit;
+        // Remove oldest entries for this region
+        await db.execute('''
+          DELETE FROM events 
+          WHERE id IN (
+            SELECT id FROM events 
+            WHERE region = ? 
+            ORDER BY id ASC 
+            LIMIT ?
+          )
+        ''', [regionName, toRemove]);
+        totalPruned += toRemove;
+      }
+    }
+
+    if (totalPruned > 0) {
+      debugPrint("✅ [ON-DEVICE PRUNE] Pruned $totalPruned excess items.");
+    } else {
+      debugPrint("ℹ️ [ON-DEVICE PRUNE] Everything is within limits.");
+    }
+  }
+
   /// Integrated Drop Logic: Merges close packets or creates new ones
   Future<void> processDroppedFilesBatch({
     required List<({String path, String name})> files,

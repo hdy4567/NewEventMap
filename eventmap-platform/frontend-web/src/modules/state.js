@@ -1,6 +1,5 @@
-/**
- * 🚀 Central State & Constants
- */
+import { EventDB } from './db.js';
+
 export const CONFIG = {
   apiKey: (import.meta.env.VITE_GOOGLE_API_KEY || "").trim(),
   clientId: (import.meta.env.VITE_GOOGLE_CLIENT_ID || "").trim(),
@@ -23,20 +22,28 @@ export const REGION_COORDS = {
   "나고야": [35.1815, 136.9066], "니가타": [37.9162, 139.0364], "홋카이도": [43.0642, 141.3469], "오키나와": [26.2124, 127.6809]
 };
 
+// 📦 [LEGACY] Key for one-time localStorage migration
 export const DB_KEY = 'kuzmo_events_db';
 
 export const state = {
   map: null,
   clusterGroup: null,
   markers: new Map(),
+  theme: localStorage.getItem('app_theme') || 'dark',
   searchQuery: "",
   currentCountry: "Korea",
   currentSubFilter: "전체",
   isAiActive: false,
+  showTourist: true, // 📡 [FILTER] 관광류 마커 표시 여부
+  showMemory: true,  // 📝 [FILTER] 추억류 마커 표시 여부
   lastRequestId: 0,
   isLockerSynced: localStorage.getItem('is_locker_synced') === 'true',
   lockerFolderName: localStorage.getItem('locker_folder_name') || '01_Archive',
   lockerFolderId: localStorage.getItem('locker_folder_id') || null,
+  isServerConnected: false, // 🚀 [NEW] Tracking backend availability
+  autoLabelingEnabled: false,
+  labelingLogs: [],
+  monitorFilter: 'ALL',
   socket: null,
   selectedIds: new Set(),
   selectionStart: null,
@@ -47,51 +54,70 @@ export const state = {
     "#맛집": { keywords: ["맛집", "먹은", "식당", "푸드"], weight: 1.0 },
     "#기록": { keywords: ["메모", "기록", "노트", "memo", "글"], weight: 1.2 }
   },
-  currentDetailData: null
+  conversationHistory: [], // 🧠 AI 단기 기억 저장소 (최근 5개)
+  currentDetailData: null,
+  existingIds: new Set() // 🚀 [PERF] Persistent O(1) lookup set for duplicates
 };
 
-const INITIAL_STUB_DATA = [
-  {
-    id: "kr-seoul-1",
-    title: "서울 광화문 페스티벌",
-    summary: "서울의 심장, 광화문에서 펼쳐지는 전통과 현대의 조화.",
-    tags: ["@서울", "#축제", "#전통"],
-    lat: 37.5759, lng: 126.9768,
-    imageUrl: "https://picsum.photos/seed/seoul/400/300",
-    region: "서울", country: "Korea"
-  },
-  {
-    id: "jp-tokyo-1",
-    title: "도쿄 시부야 나이트 익스플로러",
-    summary: "도쿄의 화려한 밤, 시부야 스크램블 교차로와 숨겨진 맛집 탐방.",
-    tags: ["@도쿄", "#시부야", "#야경", "#맛집"],
-    lat: 35.6580, lng: 139.7016,
-    imageUrl: "https://picsum.photos/seed/tokyo/400/300",
-    region: "도쿄", country: "Japan"
-  },
-  {
-    id: "jp-osaka-1",
-    title: "오사카 도톤보리 스트리트 푸드",
-    summary: "먹다 망한다는 오사카의 진수, 도톤보리 타코야끼 투어.",
-    tags: ["@오사카", "#도톤보리", "#먹방", "#맛집"],
-    lat: 34.6687, lng: 135.5013,
-    imageUrl: "https://picsum.photos/seed/osaka/400/300",
-    region: "오사카", country: "Japan"
-  },
-  {
-    id: "jp-okinawa-1",
-    title: "오키나와 츄라우미 수족관",
-    summary: "세계 최대급 수족관에서 만나는 고래상어와 푸른 바다.",
-    tags: ["@오키나와", "#수족관", "#가족여행"],
-    lat: 26.6944, lng: 127.8779,
-    imageUrl: "https://picsum.photos/seed/okinawa/400/300",
-    region: "오키나와", country: "Japan"
+const INITIAL_STUB_DATA = [];
+
+export let eventStore = INITIAL_STUB_DATA;
+
+/**
+ * 🚀 [SMART FACTORY] Load data from IndexedDB
+ */
+export async function loadStore() {
+  try {
+    const data = await EventDB.getAll();
+    if (data && data.length > 0) {
+      eventStore = data;
+      eventStore.forEach(ev => state.existingIds.add(String(ev.id)));
+      console.log(`📦 [DB] Loaded ${eventStore.length} items from IndexedDB.`);
+    } else {
+      // Fallback to localStorage if IndexedDB is empty (One-time migration)
+      const legacyData = localStorage.getItem(DB_KEY);
+      if (legacyData) {
+        const parsed = JSON.parse(legacyData);
+        eventStore = Array.isArray(parsed) ? parsed : [];
+        eventStore.forEach(ev => state.existingIds.add(String(ev.id)));
+        console.log(`📦 [DB] Final migration of ${eventStore.length} items from legacy localStorage.`);
+        await EventDB.saveAll(eventStore);
+        localStorage.removeItem(DB_KEY); // [REMOVED] Clean up legacy trash
+      }
+    }
+  } catch (err) {
+    console.error("❌ [DB LOAD ERROR]", err);
   }
-];
+}
 
-export let mockEvents = JSON.parse(localStorage.getItem(DB_KEY)) || INITIAL_STUB_DATA;
+let saveTimeout = null;
+let lastSaveTime = 0;
 
-export function saveToDB() {
-  localStorage.setItem(DB_KEY, JSON.stringify(mockEvents));
-  console.log("DB Synced: Tags and Event data persisted.");
+export function saveToDB(force = false) {
+  const now = Date.now();
+  const COOLDOWN = 2000; // 2초 쿨다운
+
+  // 🚀 [PERF] 실시간 수혈 중 과도한 I/O 방지를 위한 쓰로틀링
+  if (!force && (now - lastSaveTime < COOLDOWN)) {
+    if (saveTimeout) clearTimeout(saveTimeout);
+    saveTimeout = setTimeout(() => saveToDB(true), COOLDOWN);
+    return;
+  }
+
+  lastSaveTime = now;
+  if (saveTimeout) clearTimeout(saveTimeout);
+
+  try {
+    // 🚀 [SMART FACTORY] Persistent storage via IndexedDB
+    EventDB.saveAll(eventStore).then(() => {
+        console.log(`📡 [DB] Successfully saved ${eventStore.length} items to IndexedDB.`);
+    });
+  } catch (err) {
+    console.error("❌ [DB SAVE ERROR]", err);
+  }
+
+  // ☁️ [CLOUD DEEP SYNC] 전용 보관함에 자동 백업 (v6.0)
+  if (state.isLockerSynced && state.lockerFolderId) {
+    import('./auth.js').then(m => m.syncEventsToDrive());
+  }
 }

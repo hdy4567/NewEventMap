@@ -1,4 +1,4 @@
-import { state, mockEvents, saveToDB } from './state.js';
+import { state, eventStore, saveToDB } from './state.js';
 // 🚀 순환 참조 방지: ui.js는 필요할 때 동적 임포트
 
 /**
@@ -33,19 +33,20 @@ export function initMap() {
           state.clusterGroup = L.featureGroup();
       }
       state.map.addLayer(state.clusterGroup);
-      mockEvents.forEach(e => addMarkerToMap(e));
+      
+      // 🚀 [PERF] Initial Batch Rendering
+      const initialMarkers = [];
+      eventStore.forEach(e => {
+          const marker = addMarkerToMap(e, true);
+          initialMarkers.push(marker);
+      });
+      if (initialMarkers.length > 0) state.clusterGroup.addLayers(initialMarkers);
 
       // 🖱 오른쪽 클릭 메모 생성 핸들러 (지능형 복구 v4.0)
       state.map.on('contextmenu', async (e) => {
           L.DomEvent.preventDefault(e.originalEvent);
+          const { createEventObject } = await import('./utils.js');
           
-          // 0. DB 용량 체크 (안정성 확보)
-          const DB_LIMIT = 100; // 사용자 50개 언급 대비 넉넉하게 100개 설정
-          if (mockEvents.length >= DB_LIMIT) {
-              import('./ui.js').then(u => u.showToast(`DB 용량 초과 (${mockEvents.length}/${DB_LIMIT}). 불필요한 메모를 삭제해 주세요.`, "error"));
-              return;
-          }
-
           const rawInput = prompt("📍 [제목 @태그] 형식으로 입력하세요\n(예: 후쿠오카 @라면 맛집)");
           if (!rawInput) return;
 
@@ -53,41 +54,30 @@ export function initMap() {
           let summary = "내용 없음";
           let tags = ["@메모", "#직접입력"];
 
-          // 🚀 지능형 파싱: @ 기호가 있다면 쪼개기
           if (rawInput.includes('@')) {
               const parts = rawInput.split('@');
-              title = parts[0].trim() || "이름 없는 장소"; // @앞이 비어있을 경우 대비
+              title = parts[0].trim() || "이름 없는 장소";
               summary = parts[1].trim() || "내용 없음";
-              // 태그로 자동 삽입 (@로 시작하도록 통일)
-              if (summary !== "내용 없음") {
-                  tags.push(`@${summary}`);
-              }
+              if (summary !== "내용 없음") tags.push(`@${summary}`);
           }
           
-          const eventData = {
-              id: `memo-${Date.now()}`,
-              title: title,
-              summary: summary,
-              tags: tags,
+          const eventData = createEventObject({
+              title,
+              summary,
+              tags,
               lat: e.latlng.lat,
               lng: e.latlng.lng,
-              imageUrl: `https://picsum.photos/seed/${encodeURIComponent(title)}/400/300`,
-              region: "메모",
-              country: "Memo"
-          };
+              region: "메모"
+          });
 
-          // 1. 데이터 저장
-          mockEvents.push(eventData);
+          eventStore.push(eventData);
           saveToDB();
-
-          // 2. 맵에 즉시 반영
           addMarkerToMap(eventData);
 
-          // 3. AI 서버 실시간 동기화
           import('./ai.js').then(a => a.syncPacketToServer(eventData));
           import('./ui.js').then(u => {
               u.showToast(`'${title}' 메모 생성 완료! (AI 학습 중)`, "success");
-              u.renderSubTabs(); // 태그 목록 갱신을 위해 탭 다시 그리기
+              u.renderSubTabs();
           });
       });
 
@@ -98,7 +88,7 @@ export function initMap() {
   }
 }
 
-export function addMarkerToMap(data) {
+export function addMarkerToMap(data, isBatch = false) {
   const marker = L.marker([data.lat, data.lng], {
     icon: L.divIcon({
       className: 'custom-div-icon',
@@ -112,7 +102,10 @@ export function addMarkerToMap(data) {
     state.map.panTo(marker.getLatLng()); 
   });
   state.markers.set(data.id, { marker, data });
-  state.clusterGroup.addLayer(marker);
+  if (!isBatch) {
+    state.clusterGroup.addLayer(marker);
+  }
+  return marker;
 }
 
 export function updateMarkerUI(data) {

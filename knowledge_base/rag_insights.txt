@@ -1,0 +1,17 @@
+[TP-RAG / EvoRAG - Spatiotemporal-Aware Travel Planning Strategy]
+Reference: arXiv:2504.08694 (TP-RAG), arXiv:2507.05863 (KERAG_R)
+
+1. Core Concept: Spatiotemporal Compliance
+- Evolutionary Optimization: Travel plans must not just include "good" places, but "efficient" routes.
+- Population-based Selection: Instead of generating one plan, generate multiple candidates (trajectories) and select the one with the lowest distance-to-utility ratio.
+- Reference Trajectories: Use Web-based online travel documents (trajectories) as "prototypes" for planning.
+
+2. EVO-Optimization Logic (for AI Reasoning):
+- Step A (Retrieve): Fetch diverse trajectories representing "real routes" taken by humans.
+- Step B (Cross-over): Mix POIs from different trajectories if they are geographically closer.
+- Step C (Mutation): Replace a popular POI with a nearby "hidden" POI to increase novelty.
+- Step D (Validation): Check spatiotemporal rationality (Openings, travel time, sequence).
+
+3. RAG Reinforcement (KERAG_R)
+- Knowledge-Enhanced Retrieval: Link flat POIs with a "Knowledge Graph" (Categories, relationships: e.g., "Nearby Cafe" linked to "Museum").
+- Hallucination Mitigation: If a retrieved POI does not exist in the spatial database (lat/lng check), discard it immediately.

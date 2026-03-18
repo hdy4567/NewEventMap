@@ -6,198 +6,264 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.IO;
-using LLama;
-using LLama.Common;
-using System.Net.Http;
-using System.Text.RegularExpressions;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Runtime.InteropServices;
+using MonitoringBridge.Server.Models;
+using MonitoringBridge.Server.Services;
 
 namespace MonitoringBridge.Server
 {
+    /**
+     * 🚀 [CORE] MonitoringBridge Backend Engine (v2025.3.18)
+     * High-speed WebSocket orchestration with modular services.
+     */
     class Program
     {
-        static ConcurrentDictionary<string, bool> InputStatus = new ConcurrentDictionary<string, bool>();
-        static ConcurrentDictionary<string, DateTime> LastUpdate = new ConcurrentDictionary<string, DateTime>();
-        static LLamaContext? _aiContext;
-        static InteractiveExecutor? _aiExecutor;
-        static StatelessExecutor? _statelessExecutor;
-        static LLamaWeights? _modelWeights;
-        static string ModelPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "models", "llama-3.2-1b-instruct.gguf");
+        // --- SERVICES (DI-ready) ---
+        public static MonitoringBridge.Server.Services.DynamicKnowledgeLibrary GlobalKnowledge = new MonitoringBridge.Server.Services.DynamicKnowledgeLibrary();
+        private static LlamaService _llama = new LlamaService("models/llama.gguf");
+        private static CommunicationService _comm;
+        private static ExternalKnowledgeService _external;
+        private static PersonalMemoryManager _memory = new PersonalMemoryManager();
+        private static MoERouter _router = new MoERouter();
+        private static AIIntelligenceSentinel _sentinel = new AIIntelligenceSentinel();
 
-        static PersonalMemoryManager _memory = new PersonalMemoryManager();
-        static MoERouter _router = new MoERouter();
-        static AIIntelligenceSentinel _sentinel = new AIIntelligenceSentinel();
-        static DynamicKnowledgeLibrary _globalKnowledge = new DynamicKnowledgeLibrary();
+        private static string? _cachedBaseDir = null;
+        public static List<WebSocket> ConnectedClients = new List<WebSocket>();
+        private static readonly object _aiLock = new object();
+        private static int _clientCount = 0;
 
-        static int _clientCount = 0;
-        static readonly object _aiLock = new object();
+        // Monitoring status
+        public static ConcurrentDictionary<string, DateTime> LastUpdate = new ConcurrentDictionary<string, DateTime>();
+        public static ConcurrentDictionary<string, bool> InputStatus = new ConcurrentDictionary<string, bool>();
+        private static string _lastSelectionJson = "{\"status\":\"none\"}";
 
         static async Task Main(string[] args)
         {
+            // 🔨 Bootstrap Services
+            _external = new ExternalKnowledgeService(new HttpClient());
+            _llama = new LlamaService("models/llama.gguf");
+            _comm = new CommunicationService(GlobalKnowledge, _memory, _router, _sentinel, _llama);
+
+            // 🚀 [PORT SEIZING] Ensure our backend port (9005) is clean
+            KillProcessOnPort(AppConfig.Port);
+
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:9091/");
-            listener.Prefixes.Add("http://127.0.0.1:9091/");
-            try { listener.Start(); }
-            catch (Exception ex) { Console.WriteLine($"Error starting listener: {ex.Message}"); return; }
+            listener.Prefixes.Add($"http://localhost:{AppConfig.Port}/");
+            listener.Prefixes.Add($"http://127.0.0.1:{AppConfig.Port}/");
+            
+            try { 
+                listener.Start(); 
+                Console.WriteLine($"✅ Port {AppConfig.Port} Seized Successfully.");
+                Console.WriteLine($"🌐 MonitoringBridge Active: http://localhost:{AppConfig.Port}/");
+            }
+            catch (Exception ex) { Console.WriteLine($"[FATAL] Error starting listener: {ex.Message}"); return; }
 
-            Console.WriteLine("=== [PLC Logic Bridge Server Started] ===");
-            await EnsureModelExists();
+            // 🧠 Init AI (Streaming Ready)
+            await _llama.EnsureModelExists();
+            _llama.Initialize();
 
-            Console.WriteLine("Listening on ws://127.0.0.1:9091/");
+            // 📡 Seed Knowledge in background
+            _ = Task.Run(async () => {
+                try { await GlobalKnowledge.SeedKnowledge(); }
+                catch (Exception ex) { Console.WriteLine($"[SEED ERROR] {ex.Message}"); }
+            });
+
             _ = Task.Run(() => MonitoringLoop());
 
+            // 🕸️ Event Loop
             while (true)
             {
-                HttpListenerContext context = await listener.GetContextAsync();
-                if (context.Request.IsWebSocketRequest) { ProcessRequest(context); }
-                else { context.Response.StatusCode = 400; context.Response.Close(); }
+                try
+                {
+                    HttpListenerContext context = await listener.GetContextAsync();
+                    if (context.Request.IsWebSocketRequest)
+                    {
+                        _ = ProcessWebSocket(context);
+                    }
+                    else
+                    {
+                        _ = ServeStaticFile(context);
+                    }
+                }
+                catch (Exception ex) { Console.WriteLine($"[LOOP ERROR] {ex.Message}"); }
             }
         }
 
-        static async void ProcessRequest(HttpListenerContext context)
+        static async Task ProcessWebSocket(HttpListenerContext context)
         {
             HttpListenerWebSocketContext webSocketContext = await context.AcceptWebSocketAsync(null);
             WebSocket webSocket = webSocketContext.WebSocket;
 
-            lock (_aiLock)
-            {
-                _clientCount++;
-                if (_clientCount == 1 && _modelWeights == null) { InitializeAI(); }
-            }
+            lock (_aiLock) { ConnectedClients.Add(webSocket); _clientCount++; }
+            Console.WriteLine($"🔌 Client Connected. Total: {_clientCount}");
 
-            byte[] buffer = new byte[1024 * 10];
             try
             {
+                byte[] buffer = new byte[8192];
                 while (webSocket.State == WebSocketState.Open)
                 {
                     var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-                    if (result.MessageType == WebSocketMessageType.Text)
-                    {
-                        string message = Encoding.UTF8.GetString(buffer, 0, result.Count);
-                        await HandleSyncMessage(webSocket, message);
-                    }
-                    else if (result.MessageType == WebSocketMessageType.Close) { break; }
+                    if (result.MessageType == WebSocketMessageType.Close) break;
+
+                    string message = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                    await _comm.HandleMessage(webSocket, message);
                 }
             }
-            catch (Exception ex) { Console.WriteLine($"Socket Error: {ex.Message}"); }
+            catch (Exception ex) { Console.WriteLine($"[SOCKET ERROR] {ex.Message}"); }
             finally
             {
-                lock (_aiLock)
-                {
-                    _clientCount--;
-                    if (_clientCount <= 0) { _clientCount = 0; UnloadAI(); }
-                }
-                if (webSocket.State != WebSocketState.Closed)
-                {
-                    try { await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None); } catch { }
-                }
+                lock (_aiLock) { ConnectedClients.Remove(webSocket); _clientCount--; }
+                if (webSocket.State != WebSocketState.Closed) 
+                    await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None);
+                context.Response.Close();
             }
         }
 
-        static void UnloadAI()
-        {
-            _aiContext?.Dispose(); _aiContext = null; _aiExecutor = null; _statelessExecutor = null;
-            _modelWeights?.Dispose(); _modelWeights = null;
-            GC.Collect(); GC.WaitForPendingFinalizers();
-        }
-
-        static async Task HandleSyncMessage(WebSocket ws, string message)
+        static async Task ServeStaticFile(HttpListenerContext context)
         {
             try
             {
-                using var doc = System.Text.Json.JsonDocument.Parse(message);
-                var root = doc.RootElement;
-                string? type = root.GetProperty("type").GetString();
-                if (type == null) return;
-                var data = root.TryGetProperty("data", out var d) ? d : default;
+                if (context.Request.Url == null) return;
+                string urlPath = context.Request.Url.LocalPath;
 
-                if (type == "SYNC_PACKET" || type == "SYNC_EVENT")
+                // 🚀 [API-BRIDGE] Win32 Native FileDropList Injection (v1.4)
+                if (urlPath == "/api/sync/local-export" && context.Request.HttpMethod == "POST")
                 {
-                    string? id = data.GetProperty("id").ValueKind == System.Text.Json.JsonValueKind.String
-                                ? data.GetProperty("id").GetString()
-                                : data.GetProperty("id").GetInt32().ToString();
-                    if (id == null) return;
-
-                    Console.WriteLine($"[SYNC IN] ID:{id} received.");
-                    string ack = $"{{\"type\": \"SYNC_ACK\", \"id\": \"{id}\"}}";
-                    await ws.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes(ack)), WebSocketMessageType.Text, true, CancellationToken.None);
-
-                    ProcessPlcLogic("DATA_FETCH");
-
-                    try
+                    using (var reader = new StreamReader(context.Request.InputStream))
                     {
-                        string title = data.TryGetProperty("title", out var t) ? t.GetString() ?? "" : "";
-                        string content = data.TryGetProperty("content", out var c) ? c.GetString() ?? "" : "";
-                        List<string> tags = new List<string>();
-                        if (data.TryGetProperty("tags", out var tg) && tg.ValueKind == System.Text.Json.JsonValueKind.Array)
+                        string json = await reader.ReadToEndAsync();
+                        var items = JsonNode.Parse(json).AsArray();
+                        
+                        string exportDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Kuzmo_Exports");
+                        if (!Directory.Exists(exportDir)) Directory.CreateDirectory(exportDir);
+                        
+                        var filePaths = new List<string>();
+                        foreach (var item in items)
                         {
-                            foreach (var item in tg.EnumerateArray()) tags.Add(item.GetString() ?? "");
+                            string rawTitle = (string)item["title"] ?? "Untitled";
+                            string cleanTitle = string.Join("_", rawTitle.Split(Path.GetInvalidFileNameChars())).Trim();
+                            string fileName = $"{cleanTitle}.md";
+                            string fullPath = Path.Combine(exportDir, fileName);
+                            File.WriteAllText(fullPath, (string)item["content"], Encoding.UTF8);
+                            filePaths.Add(fullPath);
                         }
-                        if (!string.IsNullOrEmpty(title)) { _memory.Learn(title, content, tags); }
+
+                        // 🎯 [TRUE-OS-CLIPBOARD-COPY] (v2025.3.18.4100)
+                        // This injects CF_HDROP format into the Windows Clipboard
+                        // making AI chats see these as actual file uploads (not text).
+                        NativeClipboard.SetFileDropList(filePaths);
+
+                        // 📡 [EXTENSION-SYNC] Cache for extension fetch
+                        _lastSelectionJson = "{\"status\":\"ok\", \"items\": " + json + "}";
+
+                        context.Response.ContentType = "application/json";
+                        byte[] res = Encoding.UTF8.GetBytes("{\"status\":\"ok\", \"path\": \"" + exportDir.Replace("\\", "\\\\") + "\"}");
+                        await context.Response.OutputStream.WriteAsync(res, 0, res.Length);
+                        context.Response.Close();
+                        return;
                     }
-                    catch { }
                 }
-                else if (type == "AI_QUERY")
+
+                // 📡 [EXTENSION-API] Allow Extension to pull latest files
+                if (urlPath == "/api/sync/status" && context.Request.HttpMethod == "GET")
                 {
-                    string promptText = data.GetProperty("text").GetString() ?? "";
-                    await ExecuteAiStreaming(ws, promptText);
+                    context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+                    context.Response.ContentType = "application/json";
+                    byte[] res = Encoding.UTF8.GetBytes(_lastSelectionJson);
+                    await context.Response.OutputStream.WriteAsync(res, 0, res.Length);
+                    context.Response.Close();
+                    return;
                 }
-                else if (type == "KNOWLEDGE_REQUEST")
+                if (urlPath == "/" || string.IsNullOrEmpty(urlPath)) urlPath = "/index.html";
+
+                if (_cachedBaseDir == null) _cachedBaseDir = FindFrontendDir();
+                if (_cachedBaseDir == null) { context.Response.StatusCode = 500; context.Response.Close(); return; }
+
+                string filePath = Path.GetFullPath(Path.Combine(_cachedBaseDir, urlPath.TrimStart('/').Replace('/', Path.DirectorySeparatorChar)));
+                
+                if (File.Exists(filePath))
                 {
-                    var allKnowledge = _globalKnowledge.GetAllStackedKnowledge();
-                    string jsonResponse = System.Text.Json.JsonSerializer.Serialize(new { type = "KNOWLEDGE_RESULT", data = allKnowledge });
-                    await ws.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes(jsonResponse)), WebSocketMessageType.Text, true, CancellationToken.None);
+                    byte[] content = await File.ReadAllBytesAsync(filePath);
+                    string extension = Path.GetExtension(filePath).ToLower();
+                    context.Response.ContentType = MimeTypeHelper.GetMimeType(extension);
+
+                    // 🚀 [VITE-SYNC] Inject Server Config into Frontend on-the-fly
+                    if (extension == ".js" || extension == ".html") content = TransformContent(content);
+
+                    context.Response.ContentLength64 = content.Length;
+                    await context.Response.OutputStream.WriteAsync(content, 0, content.Length);
                 }
-                else if (type == "KNOWLEDGE_FILL")
-                {
-                    // 🚀 실시간 무한 수집 트리거 (스트리밍 방식 v7.1)
-                    Console.WriteLine($"[KNOWLEDGE] Broad Stacking Triggered via API (Streaming) for client.");
-                    _ = Task.Run(async () => { await _globalKnowledge.SeedKnowledgeStreaming(ws); });
-                }
+                else { context.Response.StatusCode = 404; }
             }
-            catch (Exception ex) { Console.WriteLine($"Sync Error: {ex.Message}"); }
+            catch { context.Response.StatusCode = 500; }
+            finally { context.Response.Close(); }
         }
 
-        static async Task ExecuteAiStreaming(WebSocket ws, string text)
+        private static byte[] TransformContent(byte[] content)
         {
-            if (_aiExecutor == null) return;
-            var selectedExperts = _router.Route(text);
-            var primaryExpert = selectedExperts[0];
-            string personalContext = _memory.GetRelevantContext(text);
-            string targetLocation = "";
-            var match = Regex.Match(text, @"(?:@|#)?([가-힣]{2,5})(?:\s*(?:\d코스|박|일|여행|추천|맛집|가볼))");
-            if (match.Success) targetLocation = match.Groups[1].Value;
-            var globalContext = await _globalKnowledge.GetOrFetchKnowledge(targetLocation);
+            string text = Encoding.UTF8.GetString(content);
+            text = text.Replace("import.meta.env.VITE_GOOGLE_API_KEY", $"\"{AppConfig.GoogleApiKey}\"");
+            text = text.Replace("import.meta.env.VITE_GOOGLE_CLIENT_ID", $"\"{AppConfig.GoogleClientId}\"");
+            text = text.Replace("import.meta.env.VITE_GOOGLE_APP_ID", $"\"{AppConfig.GoogleAppId}\"");
+            return Encoding.UTF8.GetBytes(text);
+        }
 
-            string prompt = $@"<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-당신은 'EventMap' 전용 가이드입니다.
-[사용자의 실제 메모 기록]
-{personalContext}
-[실시간 API 수집 지식]
-{globalContext}
-당신은 현재 {primaryExpert.Persona} 모드입니다.<|eot_id|><|start_header_id|>user<|end_header_id|>
-{text}<|eot_id|><|start_header_id|>assistant<|end_header_id|>@";
+        public static async Task BroadcastServerLog(string title, string region, string type = "SYSTEM")
+        {
+            var logPacket = new { type = "SERVER_LOG", title, region, logType = type, time = DateTime.Now.ToString("HH:mm:ss") };
+            WebSocket[] clients;
+            lock (_aiLock) { clients = ConnectedClients.ToArray(); }
+            foreach (var client in clients) { await CommunicationService.SendJson(client, logPacket); }
+        }
 
-            var inferenceParams = new InferenceParams() { MaxTokens = 600, AntiPrompts = new[] { "<|eot_id|>", "User:", "System:", "Assistant:" } };
-            await ws.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes("{\"type\":\"AI_STREAM_START\"}")), WebSocketMessageType.Text, true, CancellationToken.None);
-            StringBuilder fullText = new StringBuilder();
-            await foreach (var token in _aiExecutor.InferAsync(prompt, inferenceParams))
+        static string? FindFrontendDir()
+        {
+            string current = AppContext.BaseDirectory;
+            while (current != null)
             {
-                string cleanedToken = _sentinel.ReinforceChunk(token, targetLocation);
-                fullText.Append(cleanedToken);
-                string chunkJson = System.Text.Json.JsonSerializer.Serialize(new { type = "AI_STREAM_CHUNK", chunk = cleanedToken });
-                await ws.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes(chunkJson)), WebSocketMessageType.Text, true, CancellationToken.None);
+                string candidate = Path.Combine(current, "eventmap-platform", "frontend-web", "dist");
+                if (Directory.Exists(candidate)) return candidate;
+                candidate = Path.Combine(current, "eventmap-platform", "frontend-web");
+                if (Directory.Exists(Path.Combine(candidate, "public"))) return candidate;
+                current = Path.GetDirectoryName(current)!;
             }
-            string validatedResult = _sentinel.FinalValidate(fullText.ToString());
-            string endJson = System.Text.Json.JsonSerializer.Serialize(new { type = "AI_STREAM_END", data = validatedResult });
-            await ws.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes(endJson)), WebSocketMessageType.Text, true, CancellationToken.None);
+            return null;
         }
 
-        static void ProcessPlcLogic(string signal)
+        static void KillProcessOnPort(int port)
         {
-            InputStatus[signal] = true; LastUpdate[signal] = DateTime.Now;
-            Console.WriteLine($"[SIGNAL IN] {signal}");
+            try
+            {
+                var process = new Process();
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = $"/c netstat -ano | findstr :{port}";
+                process.StartInfo.RedirectStandardOutput = true;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.CreateNoWindow = true;
+                process.Start();
+                string output = process.StandardOutput.ReadToEnd();
+                process.WaitForExit();
+                if (string.IsNullOrWhiteSpace(output)) return;
+                var lines = output.Split(new[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var line in lines)
+                {
+                    if (line.Contains("LISTENING"))
+                    {
+                        var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                        var pid = parts.Last().Trim();
+                        if (int.TryParse(pid, out int p) && p != Process.GetCurrentProcess().Id)
+                        {
+                            try { Process.GetProcessById(p).Kill(); } catch { }
+                        }
+                    }
+                }
+            } catch { }
         }
 
         static async Task MonitoringLoop()
@@ -206,42 +272,94 @@ namespace MonitoringBridge.Server
             {
                 foreach (var point in LastUpdate.Keys)
                 {
-                    if ((DateTime.Now - LastUpdate[point]).TotalSeconds > 2.0 && InputStatus[point]) { InputStatus[point] = false; }
+                    if ((DateTime.Now - LastUpdate[point]).TotalSeconds > 2.0) InputStatus[point] = false;
                 }
                 await Task.Delay(1000);
             }
         }
+    }
 
-        static async Task EnsureModelExists()
+    /**
+     * 🛡️ [NATIVE-CLIPBOARD-ENGINE] (v2025.3.18.4000)
+     * Direct Win32 API implementation for True File Copy (CF_HDROP).
+     */
+    public static class NativeClipboard
+    {
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern bool OpenClipboard(IntPtr hWndNewOwner);
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern bool EmptyClipboard();
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern IntPtr SetClipboardData(uint uFormat, IntPtr hMem);
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern bool CloseClipboard();
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern IntPtr GlobalAlloc(uint uFlags, UIntPtr dwBytes);
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern IntPtr GlobalLock(IntPtr hMem);
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern bool GlobalUnlock(IntPtr hMem);
+        [DllImport("user32.dll")]
+        private static extern IntPtr GetForegroundWindow();
+
+        private const uint CF_HDROP = 15;
+        private const uint GMEM_MOVEABLE = 0x0002;
+        private const uint GMEM_ZEROINIT = 0x0040;
+
+        [StructLayout(LayoutKind.Sequential)]
+        struct DROPFILES
         {
-            if (File.Exists(ModelPath)) return;
-            string? modelFolder = Path.GetDirectoryName(ModelPath);
-            if (modelFolder != null && !Directory.Exists(modelFolder)) Directory.CreateDirectory(modelFolder);
-            Console.WriteLine("🤖 AI 모델 다운로드 중...");
-            using var client = new HttpClient();
-            string url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf";
-            try
-            {
-                using var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
-                response.EnsureSuccessStatusCode();
-                using var fileStream = new FileStream(ModelPath, FileMode.Create, FileAccess.Write, FileShare.None);
-                await response.Content.CopyToAsync(fileStream);
-            }
-            catch (Exception ex) { Console.WriteLine($"Download Failed: {ex.Message}"); }
+            public int pFiles; // Offset to start of file list
+            public int x;      // Mouse drop point X
+            public int y;      // Mouse drop point Y
+            public int fNC;    // Non-client area flag
+            public int fWide;  // 1 = Unicode, 0 = ANSI
         }
 
-        static void InitializeAI()
+        public static void SetFileDropList(IEnumerable<string> filePaths)
         {
-            try
+            var thread = new Thread(() =>
             {
-                if (!File.Exists(ModelPath)) return;
-                var parameters = new ModelParams(ModelPath) { ContextSize = 1024, GpuLayerCount = 0 };
-                _modelWeights = LLamaWeights.LoadFromFile(parameters);
-                _aiContext = _modelWeights.CreateContext(parameters);
-                _aiExecutor = new InteractiveExecutor(_aiContext);
-                Console.WriteLine("🧠 AI 엔진 초기화 완료.");
-            }
-            catch (Exception ex) { Console.WriteLine($"AI Init Error: {ex.Message}"); }
+                // Absolute path for debug log
+                string logFile = @"c:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\server_debug.log";
+                try
+                {
+                    IntPtr hWnd = GetForegroundWindow();
+                    if (!OpenClipboard(hWnd)) hWnd = IntPtr.Zero; // Fallback
+                    if (!OpenClipboard(hWnd)) return;
+
+                    EmptyClipboard();
+
+                    string files = string.Join("\0", filePaths) + "\0\0";
+                    byte[] fileBytes = Encoding.Unicode.GetBytes(files);
+
+                    int structSize = Marshal.SizeOf<DROPFILES>();
+                    uint totalSize = (uint)(structSize + fileBytes.Length);
+
+                    IntPtr hGlobal = GlobalAlloc(GMEM_MOVEABLE | GMEM_ZEROINIT, (UIntPtr)totalSize);
+                    IntPtr pGlobal = GlobalLock(hGlobal);
+
+                    DROPFILES df = new DROPFILES { pFiles = structSize, fWide = 1 };
+                    Marshal.StructureToPtr(df, pGlobal, false);
+                    Marshal.Copy(fileBytes, 0, (IntPtr)((long)pGlobal + structSize), fileBytes.Length);
+
+                    GlobalUnlock(hGlobal);
+                    SetClipboardData(CF_HDROP, hGlobal);
+                    CloseClipboard();
+
+                    File.AppendAllText(logFile, $"[{DateTime.Now}] [SUCCESS] Injected {filePaths.Count()} files. (Align: {structSize}B)\n");
+                    Console.WriteLine($"🚀 [WIN32_SYNC] {filePaths.Count()} files injected.");
+                }
+                catch (Exception ex) 
+                { 
+                    File.AppendAllText(logFile, $"[{DateTime.Now}] [ERROR] {ex.Message}\n");
+                    Console.WriteLine($"[NATIVE_CLIP_ERR] {ex.Message}");
+                }
+            });
+
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+            thread.Join();
         }
     }
 }

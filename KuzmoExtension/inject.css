@@ -1,0 +1,11 @@
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* AI Chat Dropzone Highlighting */
+.kuzmo-drop-active {
+  outline: 4px dashed #00bcd4 !important;
+  background: rgba(0, 188, 212, 0.1) !important;
+  transition: all 0.2s ease;
+}

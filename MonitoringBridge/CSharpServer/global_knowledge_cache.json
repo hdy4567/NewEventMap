@@ -1,0 +1,5293 @@
+{
+  "오키나와": [
+    {
+      "Name": "오키나와",
+      "Description": "오키나와현(일본어: 沖縄県 오키나와켄[*], 오키나와어: ウチナーチン 우치나친)은 일본 최남단에 있는 현으로, 류큐 열도 중에 이오토리섬 및 북위 27도 이남에 속하는 섬들과 다이토 제도를 관할한다",
+      "Tags": [
+        "오키나와",
+        "Wiki"
+      ],
+      "Lat": 26.5,
+      "Lng": 128,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "오키나와",
+      "Description": "현청 소재지는 오키나와섬의 가장 큰 도시인 나하시(那覇市)이다",
+      "Tags": [
+        "오키나와",
+        "Wiki"
+      ],
+      "Lat": 26.5,
+      "Lng": 128,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "総合受付",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6159998,
+      "Lng": 127.9695476,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "残波岬",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.4404961,
+      "Lng": 127.7119195,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "道の駅かでな",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3680641,
+      "Lng": 127.7741803,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "シルミチュー霊場",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3122093,
+      "Lng": 127.9590525,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "東南植物楽園＆おきなわスロー風楽風遊の森",
+      "Description": "오키나와의 theme_park 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "theme_park",
+        "AutoStack"
+      ],
+      "Lat": 26.375659,
+      "Lng": 127.806598,
+      "Category": "theme_park",
+      "Neighbors": {}
+    },
+    {
+      "Name": "うるま市立石川歴史民俗資料館",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.421856,
+      "Lng": 127.825245,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "農業生産法人株式会社あいあいファーム",
+      "Description": "오키나와의 yes 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "yes",
+        "AutoStack"
+      ],
+      "Lat": 26.6574784,
+      "Lng": 127.9834133,
+      "Category": "yes",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国営沖縄記念公園熱帯・亜熱帯都市緑化植物園",
+      "Description": "오키나와의 zoo 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "zoo",
+        "AutoStack"
+      ],
+      "Lat": 26.680298,
+      "Lng": 127.882832,
+      "Category": "zoo",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国営沖縄記念公園海洋文化館",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.6903361,
+      "Lng": 127.8779987,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "東村立山と水の生活博物館",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.6410753,
+      "Lng": 128.1672775,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "うるま市立海の文化資料館",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.3325587,
+      "Lng": 127.9290696,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "農家の食卓",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6572146,
+      "Lng": 127.9827809,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "諸見民芸館",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.3274125,
+      "Lng": 127.7919502,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "SHINJO",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.692559,
+      "Lng": 127.9280134,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Kouri Island North Beach",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.7138069,
+      "Lng": 128.0192893,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "カフーリゾートフチャク コンド・ホテル",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4566945,
+      "Lng": 127.8117011,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "クラブフジヤマ",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.3361701,
+      "Lng": 127.7981154,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "安保の見える丘",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.3677265,
+      "Lng": 127.7750227,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "泰期像モニュメント",
+      "Description": "오키나와의 artwork 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "artwork",
+        "AutoStack"
+      ],
+      "Lat": 26.4399804,
+      "Lng": 127.7146306,
+      "Category": "artwork",
+      "Neighbors": {}
+    },
+    {
+      "Name": "cafe 帆風",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6033512,
+      "Lng": 128.1359629,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "The Green Room",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.674016,
+      "Lng": 127.9413952,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "花人逢 (Kajinho)",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6685756,
+      "Lng": 127.9006458,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "藍風",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6642876,
+      "Lng": 127.9417927,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "オーシャンズピザ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4093356,
+      "Lng": 127.7162671,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "58バル",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4474945,
+      "Lng": 127.8044817,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海中道路",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.3319291,
+      "Lng": 127.922312,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "南展望台",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.5869252,
+      "Lng": 127.9970249,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "果報バンタ",
+      "Description": "2011年に「果報バンタ」と命名(現地案内より).",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.3608433,
+      "Lng": 127.992234,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "なかゆくい",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.5052108,
+      "Lng": 127.8793622,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "真栄田岬",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.4439064,
+      "Lng": 127.7720512,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Chicken Heart",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.4483634,
+      "Lng": 127.8038746,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ピンクマーリンクラブ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4472018,
+      "Lng": 127.803894,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ココナツムーン",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.4350085,
+      "Lng": 127.7840652,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "シーキャプテン",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.4364513,
+      "Lng": 127.7982683,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Eagle",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.508385,
+      "Lng": 127.8672857,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "おもろ茶屋",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4216776,
+      "Lng": 127.7976141,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ここなカフェ＆ダイニング",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3254588,
+      "Lng": 127.9609576,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "カフェあった",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.5112885,
+      "Lng": 127.8990531,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ペンション&カフェテラスたちがあ",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6307838,
+      "Lng": 128.2143962,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "カフェ 土花土花",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4458491,
+      "Lng": 127.8071079,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "美ら海カフェ",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.5064722,
+      "Lng": 127.878576,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ベストウェスタン沖縄恩納ビーチ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4318746,
+      "Lng": 127.7578107,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "サンセット・ビーチハウス",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4357075,
+      "Lng": 127.762054,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "White Hotel",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6352136,
+      "Lng": 127.8843931,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄かりゆしビーチリゾート・オーシャンスパ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.5259482,
+      "Lng": 127.930051,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ペンションまつむら",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4416759,
+      "Lng": 127.8040685,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ペンション美留",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4311972,
+      "Lng": 127.7573417,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ホテルプリンスプラジョ沖縄",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4526945,
+      "Lng": 127.8063999,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Drive-in Hawaii",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6381582,
+      "Lng": 127.8819237,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Johnny's",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6761369,
+      "Lng": 127.8908557,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "シーハーモニー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4368619,
+      "Lng": 127.8030789,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ステーキハウスjam",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4525036,
+      "Lng": 127.80592,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "あぐの隠れ家",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4618306,
+      "Lng": 127.8142541,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "丸吉食品",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3270255,
+      "Lng": 127.9518848,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "とんとんや",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3811911,
+      "Lng": 127.7557478,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "想作和食 花浅葱",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4044852,
+      "Lng": 127.7588301,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "仲泊海產物料理店",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4375188,
+      "Lng": 127.7999458,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "くろとん屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4474454,
+      "Lng": 127.8037258,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "あしびなー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4525919,
+      "Lng": 127.8062537,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "三線の花",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4534412,
+      "Lng": 127.8068619,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "琉球亭居酒屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4631789,
+      "Lng": 127.8183693,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "名護曲レストラン",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5736076,
+      "Lng": 127.9831393,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "本部そば",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6394269,
+      "Lng": 127.8814309,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "食と館",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6959397,
+      "Lng": 128.0204379,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "あけぼの弁当",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3975918,
+      "Lng": 127.757264,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "おべんとう",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3727375,
+      "Lng": 127.755113,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "おんなまつり",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4520551,
+      "Lng": 127.8060443,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ベリーラフ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4513281,
+      "Lng": 127.8055815,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ちぬまん",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4504964,
+      "Lng": 127.8051934,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "なかどまい",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4414632,
+      "Lng": 127.8035546,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ぬちまーす",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3604211,
+      "Lng": 127.9910848,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "泰期",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4071522,
+      "Lng": 127.7203157,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "カサラティダ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4368603,
+      "Lng": 127.8014927,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "シーサイドドライブイン",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4425157,
+      "Lng": 127.8034647,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ステーキハウス",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4640717,
+      "Lng": 127.819393,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ビーチロックビレッジ (Beach Rock Village)",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6767836,
+      "Lng": 127.9603261,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "岬",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.7056432,
+      "Lng": 127.8810502,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "平安",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3400919,
+      "Lng": 127.9568231,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "恩納そば",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4538428,
+      "Lng": 127.8068065,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "浜の駅",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6240389,
+      "Lng": 127.8880443,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海鮮料理店島",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4418015,
+      "Lng": 127.8036612,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "読谷そば",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3836076,
+      "Lng": 127.7552214,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "赤崎",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4327123,
+      "Lng": 127.8316821,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3879311,
+      "Lng": 127.9916464,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "小春や",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.7033334,
+      "Lng": 128.1495177,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "しらぱーま",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.7078213,
+      "Lng": 127.8804643,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "美瀬崎",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.7095318,
+      "Lng": 127.8799681,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "美背の福木並木",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.7014167,
+      "Lng": 127.8800364,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "やき料理",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6959405,
+      "Lng": 127.9514362,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "やさい屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.692134,
+      "Lng": 127.9583602,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ウッドペッカー今帰仁",
+      "Description": "오키나와의 caravan_site 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "caravan_site",
+        "AutoStack"
+      ],
+      "Lat": 26.7013803,
+      "Lng": 127.9200377,
+      "Category": "caravan_site",
+      "Neighbors": {}
+    },
+    {
+      "Name": "浜比嘉島リゾート",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3204773,
+      "Lng": 127.9653953,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "サンセットヒル",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4368113,
+      "Lng": 127.8031975,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "コテージ泊楽",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4410911,
+      "Lng": 127.7728991,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ポイントバケーション沖縄",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4239751,
+      "Lng": 127.7462593,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ヘリオス酒造",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.5371728,
+      "Lng": 127.9622415,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "名護城址",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.5887925,
+      "Lng": 127.9934158,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "琉球ガラス匠工房",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.4336306,
+      "Lng": 127.8133024,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "オリオンハッピーパーク",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.5870038,
+      "Lng": 127.9895081,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Bbq Hamaashibi",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.506439,
+      "Lng": 127.8788028,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "シーサイドコテージ",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4346092,
+      "Lng": 127.7862942,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "マリブハウス",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.435064,
+      "Lng": 127.7833149,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "琉球の牛",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4519051,
+      "Lng": 127.8055862,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "飲食屋がちまい",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.449888,
+      "Lng": 127.804419,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "熱帯ドリームセンター",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.6857451,
+      "Lng": 127.8765439,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "我空",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.4458418,
+      "Lng": 127.8043905,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Ken民宿",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.4469348,
+      "Lng": 127.8042996,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ビオスの丘",
+      "Description": "오키나와의 theme_park 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "theme_park",
+        "AutoStack"
+      ],
+      "Lat": 26.4216719,
+      "Lng": 127.796857,
+      "Category": "theme_park",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ホテルみゆきビーチ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.5119604,
+      "Lng": 127.8927901,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "万座毛",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.5050087,
+      "Lng": 127.8502564,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "little birds",
+      "Description": "오키나와의 chalet 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "chalet",
+        "AutoStack"
+      ],
+      "Lat": 26.7082956,
+      "Lng": 127.8804241,
+      "Category": "chalet",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ちゃんや〜",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.7059666,
+      "Lng": 127.8808538,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ふくぎハウス",
+      "Description": "오키나와의 chalet 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "chalet",
+        "AutoStack"
+      ],
+      "Lat": 26.7070322,
+      "Lng": 127.8803972,
+      "Category": "chalet",
+      "Neighbors": {}
+    },
+    {
+      "Name": "備瀬の海",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.7088912,
+      "Lng": 127.880762,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "備瀬神殿改築記念碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.7030651,
+      "Lng": 127.8810706,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "まあるい島",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.698284,
+      "Lng": 128.0224554,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "村農村環境改善サブセンター",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6964139,
+      "Lng": 128.0204557,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "伊芸S,A,物見台",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.459135,
+      "Lng": 127.8715977,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "焼肉乃我那覇",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6052152,
+      "Lng": 127.9761128,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大家",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6210197,
+      "Lng": 127.9636378,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "デイゴホテル",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.338061,
+      "Lng": 127.802291,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "しゃぶしゃぶ歓福",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.336742,
+      "Lng": 127.80145,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "でいご",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.334009,
+      "Lng": 127.799422,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ホテルニューセンチュリー",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3325088,
+      "Lng": 127.7984032,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "サンライズホテル",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.332667,
+      "Lng": 127.798445,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "炭焼きKENちゃん",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.336191,
+      "Lng": 127.80119,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ICHARA",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.33756,
+      "Lng": 127.804155,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "センター公園",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.340573,
+      "Lng": 127.802435,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.38025,
+      "Lng": 127.816657,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Emerald Steak House",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3179608,
+      "Lng": 127.8008621,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "アムスホテルズ\u3000カンナリゾートヴィラ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4693771,
+      "Lng": 127.9673639,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ソムチャイ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3374897,
+      "Lng": 127.8012427,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄こどもの国",
+      "Description": "오키나와의 zoo 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "zoo",
+        "AutoStack"
+      ],
+      "Lat": 26.3276961,
+      "Lng": 127.8035022,
+      "Category": "zoo",
+      "Neighbors": {}
+    },
+    {
+      "Name": "キッチンテラス\u3000ココニール （CocoNeel）",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6850964,
+      "Lng": 128.0048494,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ホテルモントレ沖縄 スパリゾート",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.453673,
+      "Lng": 127.805828,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "そば処夢舎",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6775437,
+      "Lng": 127.9044148,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄市立郷土博物館",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.3316781,
+      "Lng": 127.7951888,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "麺やKEIJIRO",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3355153,
+      "Lng": 127.8005136,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Rose Garden",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3110127,
+      "Lng": 127.7886,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "宇座のマチ矼",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.4330015,
+      "Lng": 127.7175749,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "幸地里之子住居跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.6248742,
+      "Lng": 127.930351,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "旧日本軍陣地跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.6262162,
+      "Lng": 127.9307372,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "プレイヤーズカフェ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.338834,
+      "Lng": 127.800164,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "カーザフ",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6906548,
+      "Lng": 127.9294305,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ソイツギ（城内下之御嶽）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6906516,
+      "Lng": 127.9300505,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "テンチジアマチジ（城内上の御嶽）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6906427,
+      "Lng": 127.9303904,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "発掘調査からみた今帰仁城主郭の変遷",
+      "Description": "主郭（俗称本丸）説明版",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6901542,
+      "Lng": 127.9302975,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "古宇利殿内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6920373,
+      "Lng": 127.9296214,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "城跡入口",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6921904,
+      "Lng": 127.9284827,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大庭",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6904563,
+      "Lng": 127.929979,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大隅郭",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6911925,
+      "Lng": 127.9293269,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大隅の城壁",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6914215,
+      "Lng": 127.9291956,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "山北今帰仁城監守来歴碑記",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6901863,
+      "Lng": 127.9304101,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "平郎門",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6912787,
+      "Lng": 127.9291469,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "御内原",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6910156,
+      "Lng": 127.9303241,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "志慶真乙樽の歌碑",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6905493,
+      "Lng": 127.9301362,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "志慶真乙樽の歌碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.6905894,
+      "Lng": 127.9301047,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "志慶真門郭",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6897981,
+      "Lng": 127.9309549,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "旧道",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6904239,
+      "Lng": 127.9298992,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "旧道",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.6907117,
+      "Lng": 127.9295108,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "2 Jerks Caribbean restaurant",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3932457,
+      "Lng": 127.8322914,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "FIFTH SON Sandwich Works",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.318095,
+      "Lng": 127.8037354,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "今帰仁五邸",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.7041204,
+      "Lng": 127.9271671,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Chilies Too",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3390412,
+      "Lng": 127.7941176,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Chili's",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3410885,
+      "Lng": 127.7758565,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Shogun Inn",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3381731,
+      "Lng": 127.7889785,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海中展望塔",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.5423774,
+      "Lng": 127.930305,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Cafeグリーンリバー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3677628,
+      "Lng": 127.7549578,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Pizzeria da ENZO",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4403452,
+      "Lng": 127.7686446,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "CoCo壱番屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3358577,
+      "Lng": 127.7915087,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海の家ピース浜",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.712485,
+      "Lng": 128.0200186,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "今帰仁之宿",
+      "Description": "오키나와의 hostel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hostel",
+        "AutoStack"
+      ],
+      "Lat": 26.7016238,
+      "Lng": 127.9327852,
+      "Category": "hostel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "石山展望台",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.6760927,
+      "Lng": 128.1479135,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "和球の碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.5898097,
+      "Lng": 127.9951841,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "白い煙と黒い煙の碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.5891091,
+      "Lng": 127.9920305,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "おきなわ郷土村",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.6904958,
+      "Lng": 127.8769307,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "オキナワグランメールリゾート",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3152202,
+      "Lng": 127.8109919,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海辺の宿 かぬたん",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.6998271,
+      "Lng": 127.9094845,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "泡瀨漁港直賣店漁港食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3239424,
+      "Lng": 127.8346195,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "アクアグレース・チャペル",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.4335869,
+      "Lng": 127.7176928,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "美ら海オンザビーチMOTOBU",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.61988,
+      "Lng": 127.8904,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "きしもと食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6603244,
+      "Lng": 127.8958951,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海中展望塔入口",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.53781,
+      "Lng": 127.93596,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ステーキハウス88",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.67619,
+      "Lng": 127.89099,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "満味",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.60578,
+      "Lng": 128.00112,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "前田食堂(名護店)",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.60075,
+      "Lng": 127.9762,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ふりっぱー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5948181,
+      "Lng": 127.9594362,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ゆきの",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5937856,
+      "Lng": 127.9649912,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "arisa",
+      "Description": "오키나와의 hostel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hostel",
+        "AutoStack"
+      ],
+      "Lat": 26.3824227,
+      "Lng": 127.7539565,
+      "Category": "hostel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Life is a Journey",
+      "Description": "오키나와의 hostel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hostel",
+        "AutoStack"
+      ],
+      "Lat": 26.4220239,
+      "Lng": 127.7400915,
+      "Category": "hostel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "fish market",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3235857,
+      "Lng": 127.8348095,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "恩納冒險",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.4363876,
+      "Lng": 127.7639401,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "あがいてぃーだ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.7038614,
+      "Lng": 127.9272674,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "サンセットビーチ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.703569,
+      "Lng": 127.9262857,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Banyon Tree Club",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3432239,
+      "Lng": 127.7803407,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Cafe Latte",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3390675,
+      "Lng": 127.7872593,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Marshall Dining Facility",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3383053,
+      "Lng": 127.7778126,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Tiger Patch Shop",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.3396065,
+      "Lng": 127.7998029,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Anthony Pizza",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3403777,
+      "Lng": 127.7802846,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "比地大滝",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.7109576,
+      "Lng": 128.1854562,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ラクシュミーカレー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3199352,
+      "Lng": 127.8056842,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ととらべべハンバーガー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6297111,
+      "Lng": 127.8875772,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大戸屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3676495,
+      "Lng": 127.8181153,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ヒガシヤ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.320509,
+      "Lng": 127.826848,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Cafe Natura",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3022754,
+      "Lng": 127.7976321,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ごーやー荘",
+      "Description": "오키나와의 hostel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hostel",
+        "AutoStack"
+      ],
+      "Lat": 26.3373271,
+      "Lng": 127.8054287,
+      "Category": "hostel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "きしもと食堂八重岳店",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6571377,
+      "Lng": 127.9109814,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "フクギ屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.7011442,
+      "Lng": 127.8799005,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "慶佐次湾のヒルギ林",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.6058938,
+      "Lng": 128.1417912,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "備瀬のワルミ",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.7052331,
+      "Lng": 127.8875449,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "暖暮",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5841163,
+      "Lng": 127.9842241,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "北山食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.7017058,
+      "Lng": 127.9332597,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "天仁屋ビーチ",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.5666783,
+      "Lng": 128.1380574,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "名護のひんぷんガジュマル",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.5873364,
+      "Lng": 127.985928,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ラーメン鬼蔵",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5875718,
+      "Lng": 127.9848391,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ぬちぐすい",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5518018,
+      "Lng": 127.9694758,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ふるさと食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6902549,
+      "Lng": 128.1080767,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "長寿宣言の村石碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.6900201,
+      "Lng": 128.1077859,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "キザハコーヒー",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6901655,
+      "Lng": 128.1079334,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "パーラーカズ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4743507,
+      "Lng": 127.9521916,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "食堂まんじろう",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4736709,
+      "Lng": 127.9518348,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "アイランドフリーダム",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.356554,
+      "Lng": 127.9723985,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "古宇利オーシャンタワー",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.7001292,
+      "Lng": 128.0241612,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "北からゆいまーる 本館",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.6903347,
+      "Lng": 127.9663198,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "クルミ舎",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3026145,
+      "Lng": 127.8063918,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄県総合運動公園案内センター",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3097263,
+      "Lng": 127.8198154,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "アマミチューの墓",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3242827,
+      "Lng": 127.9665219,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "比嘉公園",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3228891,
+      "Lng": 127.9639434,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "413はまひが Hotel & Cafe",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.3228508,
+      "Lng": 127.9511083,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "オンザビーチカフェ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.7018866,
+      "Lng": 127.9240287,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Bar swallow",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.602814,
+      "Lng": 127.9755623,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "中城碼頭",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.3261787,
+      "Lng": 127.849414,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大泊ビーチ",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.3935719,
+      "Lng": 127.9911225,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海路",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6849837,
+      "Lng": 127.8779057,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "airbnb",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.6976433,
+      "Lng": 128.017262,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "屋台らあめん口福",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6566834,
+      "Lng": 127.9842336,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "なきじんキャンプ場",
+      "Description": "오키나와의 camp_site 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "camp_site",
+        "AutoStack"
+      ],
+      "Lat": 26.6582375,
+      "Lng": 127.9905174,
+      "Category": "camp_site",
+      "Neighbors": {}
+    },
+    {
+      "Name": "森の巣箱",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6592768,
+      "Lng": 127.9885162,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "パーラー里味",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6709554,
+      "Lng": 127.9834916,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄そば処かじまやー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6730988,
+      "Lng": 127.982446,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "pomodoro",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6750661,
+      "Lng": 127.9841165,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "わるみ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6752837,
+      "Lng": 127.9903126,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "海の丘 UMI☆○Oka Inn",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6739349,
+      "Lng": 127.99242,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "guest house iroha",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6809322,
+      "Lng": 128.000284,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "源為朝上陸記念碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.6828148,
+      "Lng": 128.0037501,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ツインハウスうみぐくる",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.686072,
+      "Lng": 128.004965,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "とぅるぱ家",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6864643,
+      "Lng": 128.0060064,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ヒーリングビレッジ魂喜村",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.686385,
+      "Lng": 128.0062025,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "チルマ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6879004,
+      "Lng": 128.0035253,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "よしもと家",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6824919,
+      "Lng": 127.9987573,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "今帰仁の宿\u3000美らたま",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.690458,
+      "Lng": 127.9965885,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "シーサイドなきじん",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6905164,
+      "Lng": 127.9972329,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Ke Iki beach house and cafe",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6908119,
+      "Lng": 127.9957098,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄のひとつ宿 tinto tinto",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6917224,
+      "Lng": 127.9877029,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "オルッサの宿マチャン・マチャン",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.691581,
+      "Lng": 127.9878853,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "うちなー料理たまい",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6919654,
+      "Lng": 127.9770362,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "今帰仁村闘牛場",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.687841,
+      "Lng": 127.9780171,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "まんてん",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6831249,
+      "Lng": 127.9776091,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "割烹あじろ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6825929,
+      "Lng": 127.9773194,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "むぎ畑",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6828469,
+      "Lng": 127.9759622,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "古民家再生プロジェクト\u3000サーフィンBAR",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.6807799,
+      "Lng": 127.9767089,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "菜の花",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.6811077,
+      "Lng": 127.9777489,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Kiiro",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6581249,
+      "Lng": 128.0088804,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Emerald beach",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.6995474,
+      "Lng": 127.878437,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Bungalow Filipino Restaurant",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3372684,
+      "Lng": 127.7982943,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Bamboo Cafe",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3379877,
+      "Lng": 127.8013716,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Butcher Grill & Bar",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3389522,
+      "Lng": 127.8004085,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "コーラルリーフ イン ミンナ",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.6486184,
+      "Lng": 127.8165046,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ナカヌ浜",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3409798,
+      "Lng": 127.9523912,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "リゾートダイニング ポコアポコ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3212091,
+      "Lng": 127.8093232,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Nago fishing port",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.5870461,
+      "Lng": 127.9816396,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄黒糖カレーの店 あじとや",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.324927,
+      "Lng": 127.8301472,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Air Powe Cafe",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3559715,
+      "Lng": 127.7507964,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Noodle Restaurant Mahoroba",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3386071,
+      "Lng": 127.8005133,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国際海洋情報センター",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.5216892,
+      "Lng": 128.0187234,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "PANORAMA Ocean View Cottage",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6227209,
+      "Lng": 127.8966951,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Shaved ice",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3187968,
+      "Lng": 127.962122,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ノロ墓",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3243496,
+      "Lng": 127.9633318,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ブロンジェリーカフェ・ヤマシタ",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3405021,
+      "Lng": 127.9553586,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "いっぷく屋",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3414612,
+      "Lng": 127.9566959,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Honu Cafe",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3413409,
+      "Lng": 127.9558788,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "民宿RENGA",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.341895,
+      "Lng": 127.9513576,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ホテルへんざ",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3409736,
+      "Lng": 127.9477304,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "瑠庵+島色",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3580649,
+      "Lng": 127.9739401,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ゲストハウスあい",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.3567893,
+      "Lng": 127.970674,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "みつば牧場",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.3576057,
+      "Lng": 127.9704141,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "犬名河（インナガー）",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3957141,
+      "Lng": 127.9944638,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "イチの里 仲原遺跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3915987,
+      "Lng": 127.9946348,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "はなりびら",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.3844971,
+      "Lng": 127.9951173,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "伊計島亀岩龍宮神",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.3834193,
+      "Lng": 127.9932799,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Ikei-jima Stone Shisa",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3839321,
+      "Lng": 127.9936614,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "貝がらショップ＆カフェ もんやー",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3859061,
+      "Lng": 127.9933992,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "賃貸&ウィクリーマンション I-DAC-Ⅱ",
+      "Description": "오키나와의 chalet 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "chalet",
+        "AutoStack"
+      ],
+      "Lat": 26.5243964,
+      "Lng": 128.0241546,
+      "Category": "chalet",
+      "Neighbors": {}
+    },
+    {
+      "Name": "元祖海ぶどう",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4900143,
+      "Lng": 127.8463483,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Hawaiian Pancake House",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5089091,
+      "Lng": 127.8720982,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Forest Adventure in Okinawa",
+      "Description": "Ziplining through and above the trees.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.4340145,
+      "Lng": 127.760569,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Kitchen58",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3741692,
+      "Lng": 127.7551451,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "村内観光総合案内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4067406,
+      "Lng": 127.742052,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡公園案内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4066108,
+      "Lng": 127.7421221,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4065748,
+      "Lng": 127.7421308,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡公園",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.4113608,
+      "Lng": 127.7411766,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡公園案内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4112953,
+      "Lng": 127.7412618,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡公園案内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4101362,
+      "Lng": 127.7407314,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡公園案内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.410741,
+      "Lng": 127.7409983,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "座喜味城跡公園案内",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4097116,
+      "Lng": 127.7414958,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "琉球王国のグスク及び関連遺産群",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4095362,
+      "Lng": 127.7415991,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "三等三角点",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.4084979,
+      "Lng": 127.7419934,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "建物跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.408693,
+      "Lng": 127.7417547,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "奉寄進",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.4087108,
+      "Lng": 127.7416631,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国指定史跡 座喜味城跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4076973,
+      "Lng": 127.741811,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "史跡 座喜味城跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.4069754,
+      "Lng": 127.7421359,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "厨子甕",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4069736,
+      "Lng": 127.7421617,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "サーターグルマ（砂糖車）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.406773,
+      "Lng": 127.7422368,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "世界遺産 琉球王国のグスク及び関連遺産群",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.4069496,
+      "Lng": 127.7420219,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "高倉",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.4068565,
+      "Lng": 127.7420349,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "史跡 勝連城跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3308045,
+      "Lng": 127.8806213,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国指定史跡 勝連城跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.330656,
+      "Lng": 127.8809432,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "勝連城跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3306939,
+      "Lng": 127.8809331,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "石積み",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3302594,
+      "Lng": 127.8788293,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国指定史跡 勝連城跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3302262,
+      "Lng": 127.8788589,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "三の曲輪城門（四脚門）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3302239,
+      "Lng": 127.8789973,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ミートゥガー",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3300953,
+      "Lng": 127.8791984,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ウタミシガー",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3299889,
+      "Lng": 127.8792273,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "右旋回の階段",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3302035,
+      "Lng": 127.8795069,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "仲間ヌウカー（カンジャガー）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3299643,
+      "Lng": 127.8796121,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "マチダ・ナケージガー",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3302335,
+      "Lng": 127.8799571,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "史跡 勝連城跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.330296,
+      "Lng": 127.8796732,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "門口のガー",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3303426,
+      "Lng": 127.8797282,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "琉球王国のグスク及び関連遺産群",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3303285,
+      "Lng": 127.8797007,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "防御田地",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3307221,
+      "Lng": 127.8803417,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "玉ノミウヂ御嶽",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3307645,
+      "Lng": 127.8785802,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国指定史跡 勝連城跡\u3000一の曲輪の概要",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3306885,
+      "Lng": 127.878615,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "一の曲輪階段",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3307384,
+      "Lng": 127.8787196,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国指定史跡 勝連城跡\u3000二の曲輪",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3305316,
+      "Lng": 127.8787901,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ウミチムン（火の神）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3306073,
+      "Lng": 127.8787491,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ウシヌジガマ",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3306873,
+      "Lng": 127.878833,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "神人の腰掛け（トゥヌムトゥ）",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3304225,
+      "Lng": 127.8788987,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "二の曲輪基壇",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3304265,
+      "Lng": 127.8788574,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "舎殿跡",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3305172,
+      "Lng": 127.8790036,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "肝高の御嶽/トゥヌムトゥ",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3304625,
+      "Lng": 127.878975,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "すり鉢状遺構No.2",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3304465,
+      "Lng": 127.8790413,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "すり鉢状遺構No.1",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.330412,
+      "Lng": 127.8789874,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "うるま市観光ＭＡＰ",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.3310325,
+      "Lng": 127.8812516,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "国指定史跡 勝連城跡\u3000勝連城跡の立地",
+      "Description": "오키나와의 information 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "information",
+        "AutoStack"
+      ],
+      "Lat": 26.330885,
+      "Lng": 127.8810398,
+      "Category": "information",
+      "Neighbors": {}
+    },
+    {
+      "Name": "大北墓",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.6818714,
+      "Lng": 128.0050138,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "沖縄市戦後文化資料展示室 ヒストリート",
+      "Description": "오키나와의 museum 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "museum",
+        "AutoStack"
+      ],
+      "Lat": 26.3371363,
+      "Lng": 127.7971641,
+      "Category": "museum",
+      "Neighbors": {}
+    },
+    {
+      "Name": "久志若按司の墓",
+      "Description": "久志若按司の墓",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.514458,
+      "Lng": 128.011552,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Cafe ENISHI",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.5884244,
+      "Lng": 127.9853166,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "すば処うゎちち",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.315456,
+      "Lng": 127.8234747,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ココス",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3368616,
+      "Lng": 127.8448135,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Sea glass Beach",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.5205931,
+      "Lng": 128.030219,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Toki (Kitchen Dining)",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4151418,
+      "Lng": 127.7357439,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "HIZUKI (Glass Gallery)",
+      "Description": "오키나와의 gallery 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "gallery",
+        "AutoStack"
+      ],
+      "Lat": 26.4220054,
+      "Lng": 127.7264158,
+      "Category": "gallery",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Cafe Lunch ひさゆくい",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4316796,
+      "Lng": 127.7279458,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "鶴亀堂ぜんざい",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4062264,
+      "Lng": 127.7423141,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Maeda Breeze",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4372752,
+      "Lng": 127.7659295,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Café NY",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4220153,
+      "Lng": 127.7381154,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "残波牛苑",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4293969,
+      "Lng": 127.7293064,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "外食家くじら",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4288033,
+      "Lng": 127.729709,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "のりーちぇ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4227606,
+      "Lng": 127.7347868,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "酒処たくや",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.422768,
+      "Lng": 127.7347526,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Gallery Café",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4226811,
+      "Lng": 127.7349209,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Luire",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4220066,
+      "Lng": 127.7423497,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Red Front Door",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4270591,
+      "Lng": 127.7514834,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Kafuu",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.4309669,
+      "Lng": 127.7554558,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Songbird Café",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3936396,
+      "Lng": 127.7233096,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "器人",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3942154,
+      "Lng": 127.723035,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Ofukuro",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4130053,
+      "Lng": 127.7324805,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Stay Gold",
+      "Description": "오키나와의 bar 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "bar",
+        "AutoStack"
+      ],
+      "Lat": 26.4130867,
+      "Lng": 127.7321477,
+      "Category": "bar",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Kokopelli Pizza",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4131421,
+      "Lng": 127.7284603,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "新垣ぜんざい屋",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.660567,
+      "Lng": 127.8958468,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "レストランまーすやー",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6610937,
+      "Lng": 127.8931699,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Yuki's place Airbnb",
+      "Description": "오키나와의 alpine_hut 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "alpine_hut",
+        "AutoStack"
+      ],
+      "Lat": 26.6445959,
+      "Lng": 128.0913045,
+      "Category": "alpine_hut",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Nakama",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5260528,
+      "Lng": 127.9247391,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Weekend",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.5238092,
+      "Lng": 127.9257259,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Nakama",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.5256486,
+      "Lng": 127.9245947,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Shimanchu Club",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.5233776,
+      "Lng": 127.9265853,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Villa From Okinawa",
+      "Description": "오키나와의 apartment 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "apartment",
+        "AutoStack"
+      ],
+      "Lat": 26.5234995,
+      "Lng": 127.9249598,
+      "Category": "apartment",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Blue Cafe Gate 2 Jerk Chicken",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.336167,
+      "Lng": 127.7988909,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "あぐーしゃぶしゃぶみるく",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.4913529,
+      "Lng": 127.8476372,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Banananesia",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.6852879,
+      "Lng": 127.9603055,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "焼肉五苑",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3298033,
+      "Lng": 127.7770558,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Rocker",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3462498,
+      "Lng": 127.786909,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "白浜",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.5939401,
+      "Lng": 127.9712615,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "church",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3403086,
+      "Lng": 127.8043645,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "交通安全碑",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3159591,
+      "Lng": 127.8989427,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Uruma Gelato",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.3384124,
+      "Lng": 127.890855,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Tea Room Schiesser Garden Yamuchin",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.643861,
+      "Lng": 127.9412569,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "麺屋はちれん",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3929911,
+      "Lng": 127.7461854,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "安慶名城跡",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3810118,
+      "Lng": 127.850561,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "北海道ラーメン味の蔵うるま店",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3799775,
+      "Lng": 127.8569966,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "与勝第二中学校寄贈シーサー",
+      "Description": "오키나와의 poi 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "poi",
+        "AutoStack"
+      ],
+      "Lat": 26.3057221,
+      "Lng": 127.9112347,
+      "Category": "poi",
+      "Neighbors": {}
+    },
+    {
+      "Name": "コッコ食堂",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.7003517,
+      "Lng": 127.8808883,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "Ma Mezon",
+      "Description": "오키나와의 guest_house 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "guest_house",
+        "AutoStack"
+      ],
+      "Lat": 26.321136,
+      "Lng": 127.7966416,
+      "Category": "guest_house",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ホテルサンセットZANPA",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.4255794,
+      "Lng": 127.7222826,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "なぎさのゆめてん",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.340267,
+      "Lng": 127.8868201,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "A&W泡瀬店",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3120212,
+      "Lng": 127.8164447,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "A&W",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.3482299,
+      "Lng": 127.8247876,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ほたるの宿",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6641096,
+      "Lng": 127.99027,
+      "Category": "hotel",
+      "Neighbors": {}
+    },
+    {
+      "Name": "まんてん",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.682388,
+      "Lng": 127.977522,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "今帰仁村闘牛場",
+      "Description": "오키나와의 viewpoint 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "viewpoint",
+        "AutoStack"
+      ],
+      "Lat": 26.6877426,
+      "Lng": 127.9785,
+      "Category": "viewpoint",
+      "Neighbors": {}
+    },
+    {
+      "Name": "やんばるホットカフェ 民宿寺子屋",
+      "Description": "오키나와의 cafe 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "cafe",
+        "AutoStack"
+      ],
+      "Lat": 26.6743473,
+      "Lng": 127.9896651,
+      "Category": "cafe",
+      "Neighbors": {}
+    },
+    {
+      "Name": "ゆうらん船(恋の水先案内人)",
+      "Description": "오키나와의 attraction 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "attraction",
+        "AutoStack"
+      ],
+      "Lat": 26.6955881,
+      "Lng": 128.0202743,
+      "Category": "attraction",
+      "Neighbors": {}
+    },
+    {
+      "Name": "パーラーまるみ",
+      "Description": "오키나와의 restaurant 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "restaurant",
+        "AutoStack"
+      ],
+      "Lat": 26.6971248,
+      "Lng": 128.0162487,
+      "Category": "restaurant",
+      "Neighbors": {}
+    },
+    {
+      "Name": "民宿玉城",
+      "Description": "오키나와의 hotel 정보입니다.",
+      "Tags": [
+        "오키나와",
+        "hotel",
+        "AutoStack"
+      ],
+      "Lat": 26.6972883,
+      "Lng": 128.0155816,
+      "Category": "hotel",
+      "Neighbors": {}
+    }
+  ]
+}

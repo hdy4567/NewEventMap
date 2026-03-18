@@ -1,0 +1,31 @@
+﻿  복원할 프로젝트를 확인하는 중...
+  복원할 모든 프로젝트가 최신 상태입니다.
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(50,46): error CS1503: 1 인수: 'MonitoringBridge.Server.DynamicKnowledgeLibrary'에서 'MonitoringBridge.Server.Services.DynamicKnowledgeLibrary'(으)로 변환할 수 없습니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Services\CommunicationService.cs(60,40): warning CS8600: null 리터럴 또는 가능한 null 값을 null을 허용하지 않는 형식으로 변환하는 중입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(140,37): warning CS8602: null 가능 참조에 대한 역참조입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(148,55): warning CS8602: null 가능 참조에 대한 역참조입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(148,47): warning CS8600: null 리터럴 또는 가능한 null 값을 null을 허용하지 않는 형식으로 변환하는 중입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(152,57): warning CS8600: null 리터럴 또는 가능한 null 값을 null을 허용하지 않는 형식으로 변환하는 중입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Services\CommunicationService.cs(198,28): error CS1061: 'DynamicKnowledgeLibrary'에는 'ClearRegionKnowledge'에 대한 정의가 포함되어 있지 않고, 'DynamicKnowledgeLibrary' 형식의 첫 번째 인수를 허용하는 액세스 가능한 확장 메서드 'ClearRegionKnowledge'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하세요. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Services\CommunicationService.cs(206,24): error CS1061: 'DynamicKnowledgeLibrary'에는 'PruneGlobal'에 대한 정의가 포함되어 있지 않고, 'DynamicKnowledgeLibrary' 형식의 첫 번째 인수를 허용하는 액세스 가능한 확장 메서드 'PruneGlobal'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하세요. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(30,45): warning CS8618: null을 허용하지 않는 필드 '_comm'은(는) 생성자를 종료할 때 null이 아닌 값을 포함해야 합니다. 'required' 한정자를 추가하거나 필드을(를) nullable로 선언하는 것이 좋습니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(31,49): warning CS8618: null을 허용하지 않는 필드 '_external'은(는) 생성자를 종료할 때 null이 아닌 값을 포함해야 합니다. 'required' 한정자를 추가하거나 필드을(를) nullable로 선언하는 것이 좋습니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(345,13): warning CA1416: 이 호출 사이트에는 모든 플랫폼에서 연결할 수 있습니다. 'Thread.SetApartmentState(ApartmentState)'은(는) 'windows'에서만 지원됩니다. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+
+빌드하지 못했습니다.
+
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Services\CommunicationService.cs(60,40): warning CS8600: null 리터럴 또는 가능한 null 값을 null을 허용하지 않는 형식으로 변환하는 중입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(140,37): warning CS8602: null 가능 참조에 대한 역참조입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(148,55): warning CS8602: null 가능 참조에 대한 역참조입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(148,47): warning CS8600: null 리터럴 또는 가능한 null 값을 null을 허용하지 않는 형식으로 변환하는 중입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(152,57): warning CS8600: null 리터럴 또는 가능한 null 값을 null을 허용하지 않는 형식으로 변환하는 중입니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(30,45): warning CS8618: null을 허용하지 않는 필드 '_comm'은(는) 생성자를 종료할 때 null이 아닌 값을 포함해야 합니다. 'required' 한정자를 추가하거나 필드을(를) nullable로 선언하는 것이 좋습니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(31,49): warning CS8618: null을 허용하지 않는 필드 '_external'은(는) 생성자를 종료할 때 null이 아닌 값을 포함해야 합니다. 'required' 한정자를 추가하거나 필드을(를) nullable로 선언하는 것이 좋습니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(345,13): warning CA1416: 이 호출 사이트에는 모든 플랫폼에서 연결할 수 있습니다. 'Thread.SetApartmentState(ApartmentState)'은(는) 'windows'에서만 지원됩니다. (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1416) [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Program.cs(50,46): error CS1503: 1 인수: 'MonitoringBridge.Server.DynamicKnowledgeLibrary'에서 'MonitoringBridge.Server.Services.DynamicKnowledgeLibrary'(으)로 변환할 수 없습니다. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Services\CommunicationService.cs(198,28): error CS1061: 'DynamicKnowledgeLibrary'에는 'ClearRegionKnowledge'에 대한 정의가 포함되어 있지 않고, 'DynamicKnowledgeLibrary' 형식의 첫 번째 인수를 허용하는 액세스 가능한 확장 메서드 'ClearRegionKnowledge'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하세요. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\Services\CommunicationService.cs(206,24): error CS1061: 'DynamicKnowledgeLibrary'에는 'PruneGlobal'에 대한 정의가 포함되어 있지 않고, 'DynamicKnowledgeLibrary' 형식의 첫 번째 인수를 허용하는 액세스 가능한 확장 메서드 'PruneGlobal'이(가) 없습니다. using 지시문 또는 어셈블리 참조가 있는지 확인하세요. [C:\YOON\CSrepos\NewEventMap\MonitoringBridge\CSharpServer\CSharpServer.csproj]
+    경고 8개
+    오류 3개
+
+경과 시간: 00:00:01.50

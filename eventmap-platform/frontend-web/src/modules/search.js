@@ -1,4 +1,4 @@
-import { state, REGION_COORDS, mockEvents } from './state.js';
+import { state, REGION_COORDS, eventStore } from './state.js';
 import { showToast } from './ui.js';
 
 /**
@@ -17,6 +17,9 @@ export function filterMarkers() {
   const isTagSearch = q.startsWith("@");
   const cleanQ = isTagSearch ? q.substring(1) : q;
   const qTokens = cleanQ.length >= 2 ? getTokens(cleanQ) : [];
+
+  const toAdd = [];
+  const toRemove = [];
 
   state.markers.forEach(({ marker, data }) => {
     // 1. Search Query Match
@@ -47,12 +50,31 @@ export function filterMarkers() {
       }
     }
 
-    if (mS && mC && mSub) {
-      if (!state.clusterGroup.hasLayer(marker)) state.clusterGroup.addLayer(marker);
+    // 4. Marker Type Filter (Tourist vs Memory)
+    // 🔑 data.type is the authoritative source (set in utils.js createEventObject)
+    // Fallback to id-prefix for legacy items loaded from IndexedDB before this fix
+    const dataType = data.type || (() => {
+        const idStr = String(data.id || '');
+        if (idStr.startsWith('s-db-')) return 'tourist';
+        if (idStr.startsWith('kuzmo-')) return 'memory';
+        return 'unknown'; // Legacy/unclassified → always shown
+    })();
+    
+    let mType = true;
+    if (dataType === 'tourist' && !state.showTourist) mType = false;
+    if (dataType === 'memory'  && !state.showMemory)  mType = false;
+    // 'unknown' type legacy items are always visible (mType stays true)
+
+    const visible = mS && mC && mSub && mType;
+    if (visible) {
+        if (!state.clusterGroup.hasLayer(marker)) toAdd.push(marker);
     } else {
-      if (state.clusterGroup.hasLayer(marker)) state.clusterGroup.removeLayer(marker);
+        if (state.clusterGroup.hasLayer(marker)) toRemove.push(marker);
     }
   });
+
+  if (toAdd.length > 0) state.clusterGroup.addLayers(toAdd);
+  if (toRemove.length > 0) state.clusterGroup.removeLayers(toRemove);
 }
 
 export function flyToFilteredResults() {
@@ -71,7 +93,6 @@ export function flyToFilteredResults() {
       state.map.flyToBounds(bounds, { padding: [50, 50], maxZoom: 14, duration: 1.5 });
     }
   } else {
-    // Smart Fallback to region coords
     const qRaw = state.searchQuery.replace(/[@#]/g, " ");
     const words = qRaw.split(/\s+/);
     for (const word of words) {

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Kuzmo AI Bridge",
+  "version": "1.0",
+  "description": "Bridges Kuzmo MEMOREAL files directly into AI chats (Gemini/Perplexity).",
+  "permissions": [
+    "activeTab",
+    "clipboardRead",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://gemini.google.com/*",
+    "https://www.perplexity.ai/*",
+    "http://localhost:9005/*",
+    "http://localhost:9091/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://www.perplexity.ai/*",
+        "http://localhost:*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "inject.css"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

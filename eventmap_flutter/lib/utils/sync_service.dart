@@ -6,6 +6,7 @@ import '../models/context_packet.dart';
 import 'package:flutter/foundation.dart';
 import 'io_utils.dart';
 import 'local_ai_engine.dart';
+import 'local_audit_service.dart';
 
 class SyncService {
   static final SyncService instance = SyncService._();
@@ -20,6 +21,9 @@ class SyncService {
 
   void startSync() {
     _connect();
+    // 🕵️ [ON-DEVICE] Audit & Prune on startup
+    LocalAuditService.instance.runFullAudit(); 
+    DatabaseHelper.instance.pruneDataPerRegion(); 
     _syncTimer = Timer.periodic(const Duration(seconds: 10), (_) => _syncDirtyRecords());
   }
 

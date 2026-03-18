@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; [AI & GPU PERFORMANCE BOOST TWEAK]
+; This registry file optimizes Windows for high-performance GPU tasks (WebGPU/WASM)
+; and reduces system-level throttling for AI workloads.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"HwSchMode"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\DirectX\UserGpuPreferences]
+"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"="GpuPreference=2;"
+"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"="GpuPreference=2;"
+"C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"="GpuPreference=2;"
