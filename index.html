@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventMap Platform - Global Festival Tracker</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.default.css" />
+  <!-- Style -->
+  <script type="module" crossorigin src="/assets/index-CfsKxgeF.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DSi2IhTs.css">
+</head>
+
+<body>
+  <!-- SVG Filter for Map Theme (Matches Flutter Matrix) -->
+  <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
+    <filter id="choco-dark-filter">
+      <feColorMatrix type="matrix" values="
+          -0.85 0 0 0 0.9
+          0 -0.85 0 0 0.86
+          0 0 -0.85 0 0.82
+          0 0 0 1 0" />
+    </filter>
+  </svg>
+
+  <div id="app">
+    <!-- Background Map -->
+    <!-- Knowledge Ingestion Progress -->
+    <div id="knowledge-progress-container" class="knowledge-progress-container" style="display: none;">
+      <div class="knowledge-progress-label" id="knowledge-progress-label">지식 수혈 중...</div>
+      <div class="progress-track">
+        <div id="knowledge-progress-bar" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Selection Box (Alt+Drag) -->
+    <div id="selection-box" class="selection-box"></div>
+
+    <!-- Top Panel Container (3-Tier Premium) -->
+    <div class="top-panel-container">
+      <!-- Tier 1: Search -->
+      <div id="search-bar-wrap" class="search-bar-wrap glass">
+        <div id="logo-tag" class="logo-tag">N</div>
+        <div id="total-count-badge" class="total-count-badge">0</div>
+        <input type="text" id="search-input" class="search-input" placeholder="쿠즈모(Kuzmo)에 무엇을 기록할까요?">
+        <div class="vertical-divider"></div>
+        <button id="ai-toggle-btn" class="ai-toggle-btn">
+          <span class="ai-icon">✨</span>
+        </button>
+        <div class="search-icon-right">🔍</div>
+      </div>
+
+      <!-- Tier 2: Country Selector -->
+      <div class="country-selector">
+        <div id="tab-indicator" class="tab-indicator"></div>
+        <div class="country-tab active" onclick="Kuzmo.switchCountry('Korea', 0)">KR 🇰🇷</div>
+        <div class="country-tab" onclick="Kuzmo.switchCountry('Japan', 1)">JP 🇯🇵</div>
+        <div class="country-tab" onclick="Kuzmo.switchCountry('Memo', 2)">MEMO 📝</div>
+      </div>
+
+      <!-- Tier 3: Sub Tabs -->
+      <div id="sub-tabs" class="sub-tabs-scroll no-scrollbar">
+        <!-- Dynamic Sub-tabs will be injected here -->
+      </div>
+
+      <!-- Selection Action Bar (Batch Tagging) -->
+      <div id="selection-action-bar" class="selection-action-bar glass">
+        <div class="selection-count">
+          <span id="selected-count">0</span> Pins Selected
+        </div>
+        <div class="selection-input-wrap">
+          <input type="text" id="batch-tag-input" placeholder="태그 입력 (예: @맛집)...">
+        </div>
+        <div class="selection-action-group">
+          <button id="apply-batch-tags" class="btn-primary-sm" style="background: var(--accent-purple); min-width: 70px; border: none;">Apply</button>
+          <button id="delete-selection" class="btn-delete-sm">Delete</button>
+          <button id="clear-selection" class="btn-cancel-sm">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Chat Overlay -->
+    <div id="chat-fab-wrap" class="chat-fab-wrap">
+      <div id="chat-fab" class="chat-fab">
+        <img src="/assistant-icon.png" alt="Assistant" class="chat-fab-img">
+      </div>
+    </div>
+
+    <div id="chat-panel" class="glass chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="ai-burst">✨</span>
+          <span>Cookie Assistant</span>
+        </div>
+        <button id="close-chat" class="close-chat-btn">✕</button>
+      </div>
+      <div class="chat-messages no-scrollbar" id="chat-messages">
+        <div class="message ai">
+          <img src="/assistant-icon.png" class="ai-avatar-tiny" alt="AI">
+          <div class="message-content">안녕하세요! 어떤 여행 추억이나 장소를 찾아드릴까요?</div>
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" class="chat-input" placeholder="무엇을 도와드릴까요?">
+        <button id="send-chat" class="chat-send-btn">➔</button>
+      </div>
+    </div>
+
+    <!-- Floating Locker (Top Right) -->
+    <div class="storage-container">
+      <div id="storage-btn" class="storage-icon-btn" title="보관함 열기">
+        <img src="/locker-icon.png" alt="Locker" class="storage-icon-img">
+      </div>
+      <div id="locker-panel" class="locker-panel glass">
+        <!-- State 1: Unsynced -->
+        <div id="locker-unsynced" class="locker-sync-view">
+          <button id="close-locker-unsynced" class="close-locker-btn"
+            style="position:absolute; top:20px; right:20px;">✕</button>
+          <div class="sync-illustration">☁️</div>
+          <p class="sync-msg">Drive Cloud Sync가 필요합니다.</p>
+          <button class="sync-main-btn" onclick="Kuzmo.handleAuthClick()">CLOUD SYNC</button>
+        </div>
+
+        <!-- State 1.5: Folder Picker -->
+        <div id="locker-folder-picker" class="locker-sync-view" style="display: none; padding: 20px;">
+          <div class="locker-header" style="margin-bottom: 10px;">
+            <span class="locker-title">SELECT FOLDER</span>
+            <button class="close-locker-btn" onclick="document.getElementById('locker-panel').classList.remove('active')">✕</button>
+          </div>
+          <div id="folder-list-container" class="folder-list-scroll no-scrollbar" style="width: 100%; max-height: 200px; overflow-y: auto;">
+             <p style="font-size: 11px; opacity: 0.5;">Loading folders...</p>
+          </div>
+          <p style="font-size: 10px; color: var(--text-dim); margin: 8px 0; text-align: center;">
+            연동할 폴더를 선택하거나 자동 생성하세요.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 8px; width: 100%; align-items: center;">
+            <div style="display: flex; gap: 8px; width: 100%; justify-content: center;">
+              <button id="refresh-folders-btn" class="btn-ghost" style="font-size: 10px; flex: 1;">Refresh List</button>
+              <button id="select-folder-btn" class="btn-primary-sm" style="font-size: 10px; flex: 1; padding: 8px;">Select Folder</button>
+            </div>
+            <button onclick="Kuzmo.createArchiveFolderAuto()" class="btn-ghost" style="width: 100%; font-size: 10px; border-color: var(--primary);">✨ New "Kuzmo_Archive" Folder</button>
+          </div>
+        </div>
+
+        <!-- State 2: Synced (Content) -->
+        <div id="locker-synced-content" style="display: none; width: 100%; height: 100%; display: flex; flex-direction: column;">
+          <div class="locker-header">
+            <div class="locker-title-group">
+                <span class="deck-icon">🗃️</span>
+                <span class="locker-title">MEMOREAL</span>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <button id="change-folder-btn" class="icon-btn-sm" title="Change Folder">⚙️</button>
+              <button id="close-locker" class="icon-btn-sm">✕</button>
+            </div>
+          </div>
+
+          <!-- 🔍 Deck Controls -->
+          <div class="deck-controls">
+            <div class="deck-search-wrap">
+                <input type="text" id="deck-search" placeholder="검색 또는 필터 (예: @맛집)..." class="deck-search-input">
+                <span class="deck-search-icon">🔍</span>
+            </div>
+            <div class="deck-filter-row no-scrollbar">
+                <div class="deck-filter-chip active" data-filter="all">All</div>
+                <div class="deck-filter-chip" data-filter="pin">Pinned</div>
+                <div class="deck-filter-chip" data-filter="tourist">📡 Tourist</div>
+                <div class="deck-filter-chip" data-filter="memory">📸 Memory</div>
+                <div class="deck-filter-chip" data-filter="image">Images</div>
+                <div class="deck-filter-chip" data-filter="document">Docs</div>
+                <div class="deck-filter-chip" data-filter="audio">Voice</div>
+            </div>
+          </div>
+
+          <div class="locker-content no-scrollbar hide-scrollbar" id="locker-slots" style="flex: 1; overflow-y: auto;">
+            <!-- Dynamically populated cards -->
+          </div>
+
+          <!-- 🚀 Deck Action Bar -->
+          <div id="deck-action-bar" class="deck-action-bar" style="display: none;">
+             <button class="btn-itinerary-magic" onclick="Kuzmo.suggestItineraryFromDeck()">
+                <span>✨</span> AI 최단 동선 설계
+             </button>
+          </div>
+
+          <!-- ➕ Quick Note FAB (v22.0) -->
+          <button id="main-add-note-btn" class="fab-btn" onclick="Kuzmo.openQuickNote()">＋</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Apps (Mac Dock - Right Middle) -->
+    <div id="side-hover-trigger" class="side-hover-trigger">
+      <div class="side-indicator"></div>
+    </div>
+
+    <div id="side-apps-panel" class="side-apps-panel glass">
+      <div class="side-apps-grid" id="side-apps-grid">
+        <!-- Dynamically added squares (Modified sequence v12.0) -->
+        <div class="side-app-square" onclick="Kuzmo.requestKnowledgeFill()" title="지식 실시간 수혈 (데이터 수집)">📡</div>
+        <div class="side-app-square" onclick="Kuzmo.pruneData(1000)" title="1000개 초과 데이터 정리">🧹</div>
+        <div class="side-app-square" onclick="Kuzmo.stopKnowledgeFill()" title="수집 중단 (API 정지)">⛔</div>
+        <div class="side-app-square" onclick="Kuzmo.rebootSystem()" title="시스템 재부팅">🚀</div>
+        <div class="side-app-square add-btn">＋</div>
+      </div>
+      
+      <div class="ai-toggle-wrap">
+        <label class="switch">
+          <input type="checkbox" id="ai-auto-label-toggle">
+          <span class="slider"></span>
+        </label>
+        <span class="filter-label" style="font-size: 10px; font-weight: 800; color: var(--primary-glow);">AUTO LABELING</span>
+      </div>
+
+      <!-- 🛡️ Marker Filter Section (v13.5) -->
+      <div class="side-filter-section">
+        <div class="filter-header">MARKER FILTER</div>
+        <label class="filter-item">
+          <input type="checkbox" id="filter-tourist" checked>
+          <span class="filter-label">📡 관광류 마커</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" id="filter-memory" checked>
+          <span class="filter-label">📝 추억류 마커</span>
+        </label>
+      </div>
+    </div>
+
+
+    <!-- Detail Sheet (Event Information) -->
+    <div id="detail-sheet" class="glass overlay-panel">
+      <div class="overlay-header">
+        <span class="overlay-title" id="sheet-title">축제 정보</span>
+        <button class="close-btn" id="close-sheet">✕</button>
+      </div>
+      <div class="detail-container">
+        <div class="detail-visual">
+          <img id="sheet-image" class="w-full h-full object-cover" alt="visual detail">
+        </div>
+        <div class="detail-info custom-scroll no-scrollbar">
+          <div class="detail-meta">
+            <div id="sheet-region-badge" class="badge"></div>
+            <div id="sheet-timestamp" class="timestamp"></div>
+          </div>
+          
+          <div class="content-editor-wrap">
+            <textarea id="sheet-summary" class="summary-input" placeholder="이곳에 메모를 작성하세요..."></textarea>
+            <div id="sheet-audio-slot" class="audio-player-slot" style="display: none;">
+              <!-- Dynamic Audio Player -->
+            </div>
+          </div>
+
+          <div id="sheet-tags" class="tag-row"></div>
+          
+          <div class="detail-actions">
+             <button class="btn-delete-event" id="sheet-delete-btn">기록 삭제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Toast & Feedback (Missing in previous version) -->
+    <div id="toast-container" class="toast-container"></div>
+    <div id="region-glow" class="region-glow-overlay">
+      <div class="glow-badge">지역</div>
+    </div>
+
+    <!-- 🧠 AI Process Monitor Panel -->
+    <div id="ai-monitor-panel" class="ai-monitor-panel glass active">
+      <div class="monitor-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="ai-burst">✨</span>
+          <span>AI MONITOR</span>
+          <span class="monitor-count" style="font-size: 9px; background: var(--accent-purple); color: white; padding: 2px 6px; border-radius: 6px; margin-left: 4px;">0</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div class="live-indicator">
+            <span class="live-dot"></span>
+            <span style="font-size: 8px; font-weight: 900; color: var(--success);">LIVE</span>
+          </div>
+          <button id="close-monitor" class="close-btn" style="width: 20px; height: 20px; font-size: 10px;">✕</button>
+        </div>
+      </div>
+      
+      <!-- 🚀 Monitor Filter Chips (v14.5) -->
+      <div class="monitor-filters no-scrollbar">
+        <div class="m-filter-chip active" onclick="Kuzmo.filterMonitor('ALL')">ALL</div>
+        <div class="m-filter-chip" onclick="Kuzmo.filterMonitor('LABEL')">LABEL</div>
+        <div class="m-filter-chip" onclick="Kuzmo.filterMonitor('SYNC')">SYNC</div>
+        <div class="m-filter-chip" onclick="Kuzmo.filterMonitor('SYSTEM')">SYSTEM</div>
+      </div>
+
+      <!-- 📊 Monitor Vitals (Visual Zone) -->
+      <div class="monitor-vitals">
+        <div class="vital-item">
+          <div class="vital-header">
+            <span>DATABASE</span>
+            <span id="vital-db-count">0</span>
+          </div>
+          <div class="vital-bar"><div id="vital-db-fill" class="vital-fill" style="width: 0%; background: var(--accent-purple);"></div></div>
+        </div>
+        <div class="vital-item">
+          <div class="vital-header">
+            <span>AI BRAIN</span>
+            <span id="vital-brain-load">0%</span>
+          </div>
+          <div class="vital-bar"><div id="vital-brain-fill" class="vital-fill" style="width: 0%; background: #00e5ff;"></div></div>
+        </div>
+      </div>
+
+      <div id="monitor-logs" class="monitor-logs no-scrollbar custom-scroll">
+        <div class="log-item" style="opacity: 0.5; text-align: center;">Ready to stream...</div>
+      </div>
+    </div>
+
+    <!-- 🧭 Mode Switcher (v16.0) -->
+    <div class="mode-switcher-wrap glass">
+      <div id="mode-map" class="mode-tab active" onclick="Kuzmo.switchMode('MAP')">
+        <span class="mode-icon">🗺️</span>
+        <span class="mode-text">Map View</span>
+      </div>
+      <div id="mode-locker" class="mode-tab" onclick="Kuzmo.switchMode('LOCKER')">
+        <span class="mode-icon">📌</span>
+        <span class="mode-text">MEMOREAL</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    window.onerror = function(msg, url, line, col, error) {
+      alert(`[BROWSER ERROR]\n${msg}\nLine: ${line}\nURL: ${url}`);
+      return false;
+    };
+    console.log("🕵️ Global Shield Active. Fetching libs...");
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://accounts.google.com/gsi/client"></script>
+</body>
+
+</html>

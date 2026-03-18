@@ -11,8 +11,8 @@
   "host_permissions": [
     "https://gemini.google.com/*",
     "https://www.perplexity.ai/*",
-    "http://localhost:9005/*",
-    "http://localhost:9091/*"
+    "http://localhost/*",
+    "http://127.0.0.1/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -22,7 +22,8 @@
       "matches": [
         "https://gemini.google.com/*",
         "https://www.perplexity.ai/*",
-        "http://localhost:*"
+        "http://localhost/*",
+        "http://127.0.0.1/*"
       ],
       "js": [
         "content.js"

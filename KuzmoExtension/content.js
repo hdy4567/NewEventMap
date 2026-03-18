@@ -37,7 +37,22 @@ document.addEventListener('paste', (e) => {
     if (text && text.includes('[KUZMO_SYNC]')) {
         if (DEBUG_MODE) console.log('🛑 [PASSPORT] Kuzmo Sync detected. Blocking leakage...');
         e.preventDefault();
-        e.stopImmediatePropagation(); // Kill other listeners
+        e.stopImmediatePropagation(); 
+        
+        // 🔥 [FORCE-CLEAN] Periodic scrubbing for 1.5 seconds
+        let scrubCount = 0;
+        const scrubInterval = setInterval(() => {
+            const selectors = ['.wysiwyg-textarea', '[role="textbox"]', '[contenteditable="true"]', 'textarea'];
+            selectors.forEach(s => {
+                const el = document.querySelector(s);
+                if (el) {
+                    if (el.innerText?.includes('[KUZMO_SYNC]')) el.innerText = "";
+                    if (el.value?.includes('[KUZMO_SYNC]')) el.value = "";
+                }
+            });
+            if (++scrubCount > 30) clearInterval(scrubInterval); // 30 * 50ms = 1.5s
+        }, 50);
+
         handleKuzmoSync(e.target);
     }
 }, true);
